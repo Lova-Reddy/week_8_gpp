@@ -1,0 +1,105 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Merchant {
+  id              String   @id @default(uuid())
+  email           String   @unique
+  password        String
+  name            String?
+  webhook_url     String?
+  webhook_secret  String?
+  api_key         String?  @unique
+  api_secret      String?
+
+  payments        Payment[]
+  refunds         Refund[]
+  webhook_logs    WebhookLog[]
+  idempotency_keys IdempotencyKey[]
+  
+  created_at      DateTime @default(now())
+  updated_at      DateTime @updatedAt
+
+  @@map("merchants")
+}
+
+model Payment {
+  id              String   @id
+  order_id        String
+  merchant_id     String
+  amount          Int
+  currency        String
+  method          String
+  vpa             String?
+  status          String   @default("pending") // pending, processing, success, failed
+  error_code      String?
+  error_description String?
+  captured        Boolean  @default(false)
+  
+  merchant        Merchant @relation(fields: [merchant_id], references: [id])
+  refunds         Refund[]
+
+  created_at      DateTime @default(now())
+  updated_at      DateTime @updatedAt
+
+  @@map("payments")
+}
+
+model Refund {
+  id              String   @id
+  payment_id      String
+  merchant_id     String
+  amount          Int
+  reason          String?
+  status          String   @default("pending") // pending, processed
+  
+  payment         Payment  @relation(fields: [payment_id], references: [id])
+  merchant        Merchant @relation(fields: [merchant_id], references: [id])
+
+  created_at      DateTime @default(now())
+  processed_at    DateTime?
+  
+  @@map("refunds")
+}
+
+model WebhookLog {
+  id              String   @id @default(uuid())
+  merchant_id     String
+  event           String
+  payload         Json
+  status          String   @default("pending") // pending, success, failed
+  attempts        Int      @default(0)
+  last_attempt_at DateTime?
+  next_retry_at   DateTime?
+  response_code   Int?
+  response_body   String?
+
+  merchant        Merchant @relation(fields: [merchant_id], references: [id])
+
+  created_at      DateTime @default(now())
+
+  @@index([merchant_id])
+  @@index([status])
+  @@index([next_retry_at])
+
+  @@map("webhook_logs")
+}
+
+model IdempotencyKey {
+  key             String
+  merchant_id     String
+  response        Json
+  
+  merchant        Merchant @relation(fields: [merchant_id], references: [id])
+
+  created_at      DateTime @default(now())
+  expires_at      DateTime
+
+  @@id([key, merchant_id])
+  @@map("idempotency_keys")
+}

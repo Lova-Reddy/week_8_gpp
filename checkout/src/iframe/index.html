@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Checkout</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #6366f1;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        button:disabled {
+            background: #a5a7f5;
+            cursor: not-allowed;
+        }
+
+        .error {
+            color: #ef4444;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Pay &lt;Amount&gt;</h2>
+    <div id="error-msg" class="error"></div>
+    <form id="payment-form">
+        <div class="form-group">
+            <label>Card Number</label>
+            <input type="text" placeholder="0000 0000 0000 0000" maxlength="19">
+        </div>
+        <div class="form-group" style="display: flex; gap: 10px;">
+            <div style="flex: 1;">
+                <label>Expiry</label>
+                <input type="text" placeholder="MM/YY">
+            </div>
+            <div style="flex: 1;">
+                <label>CVC</label>
+                <input type="text" placeholder="123" maxlength="4">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Payment Method</label>
+            <select id="method">
+                <option value="card">Card</option>
+                <option value="upi">UPI</option>
+            </select>
+        </div>
+        <div class="form-group" id="vpa-group" style="display: none;">
+            <label>VPA</label>
+            <input type="text" id="vpa" placeholder="user@upi">
+        </div>
+        <button type="submit" id="pay-btn">Pay Now</button>
+    </form>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const apiKey = urlParams.get('key');
+        const orderId = urlParams.get('order_id');
+        // Dummy amount for display, real amount comes from order lookup or passed param (simplified here)
+        // In real flow, we'd fetch order details using orderId first.
+
+        document.getElementById('method').addEventListener('change', (e) => {
+            document.getElementById('vpa-group').style.display = e.target.value === 'upi' ? 'block' : 'none';
+        });
+
+        document.getElementById('payment-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = document.getElementById('pay-btn');
+            const errorDiv = document.getElementById('error-msg');
+
+            btn.disabled = true;
+            btn.innerText = 'Processing...';
+            errorDiv.innerText = '';
+
+            const method = document.getElementById('method').value;
+            const vpa = document.getElementById('vpa').value;
+
+            try {
+                // Hardcoded secret for demo because we are in frontend. 
+                // ideally this API call should be proxied or use a public key scheme.
+                // For this challenge, we use the headers directly but this exposes the secret if we include it.
+                // BUT the instructions say: Extract credentials from request headers.
+                // The checkout page usually talks to its own backend (the checkout service) which then talks to the API with secrets.
+                // OR we presume the "key" passed in params is the public key (api_key) and we don't need secret for payment creation?
+                // The instructions say: POST /api/v1/payments requires authentication (api key + secret).
+                // This implies the checkout page (client) CANNOT call this directly securely.
+                // HOWEVER, for this "Deliverable 1 + 2", maybe we act as if we are the merchant's backend?
+                // Wait, the SDK is for the merchant's frontend. 
+                // Implementing a proxy endpoint in our checkout server (port 3001) to talk to API (port 8000).
+
+                // Let's call our own server /process-payment which will have the secrets? 
+                // No, we don't have the merchant's secret in our checkout service unless it's the "Payment Gateway's" own checkout.
+                // The Merchant (User) puts the SDK on THEIR site.
+                // The SDK opens iframe to OUR Gateway.
+                // OUR Gateway (Checkout Service) should be able to create payment.
+                // BUT it needs the Merchant's credentials? No, it needs to identify the merchant by the Context (API Key passed in).
+                // If I call the API using ONLY Api Key, I might need to relax auth for the 'public' create payment?
+                // The instructions show Create Payment expecting X-Api-Key AND X-Api-Secret.
+                // This implies Create Payment is a Server-Side call.
+                // The flow usually is: Merchant Server creates Order/Payment -> passes ID to Client -> Client opens SDK with ID.
+                // But instructions say "Create Payment Endpoint... POST /api/v1/payments".
+                // And the SDK usage says: `checkout = new PaymentGateway({ key: '...', orderId: '...' })`.
+                // It seems the "Payment" object is created via API first (by merchant backend), returning an ID.
+                // THEN SDK is opened.
+                // Wait, looking at "Modified Create Payment Endpoint" - it says "Create payment record... status pending".
+                // And "Create Order" snippet shows curl command with secrets.
+                // So the Merchant Backend creates the "Payment" (or Order).
+                // Wait, "Order" and "Payment" seems conflated or "Order" is upstream.
+                // In the SDK snippet: `orderId: 'order_xyz'`.
+                // In the API request body: `order_id: ...`.
+
+                // Logic:
+                // 1. Merchant Backend calls POST /payments -> gets `id` (payment_id).
+                // 2. Merchant Frontend uses SDK with `payment_id`? 
+                //    No, SDK usage says `orderId: '...'`.
+                //    And `key: '...'`.
+                //    It doesn't pass `paymentId`.
+                //    So the Checkout Form must create the payment? 
+                //    Or the Checkout Form *captures* it?
+                //    Or the Checkout Form calls an internal API to Process it?
+
+                // Re-reading "Process Payment Job": "Job receives payment ID... Simulate payment processing... Update status".
+                // This implies steps:
+                // 1. Payment created (Pending).
+                // 2. Job enqueued.
+                // 3. Job processes.
+
+                // If the SDK is collecting card details, IT must initiate the "pay" action.
+                // If "Create Payment" API is server-side, then the SDK must be calling something else or we are missing a step.
+                // AH, "Create Payment Endpoint" enqueues the job IMMEDIATELY.
+                // "Enqueue ProcessPaymentJob... Payment processing happens asynchronously".
+
+                // So IF the SDK calls `POST /payments`, it needs Secret. That's bad.
+                // MAYBE the SDK is supposed to call a "public" endpoint like `POST /checkout/pay`?
+                // OR the "Create Payment" endpoint is indeed what the Merchant Backend calls, and the SDK just "shows" the status?
+                // But the SDK has a "Pay Now" button and form.
+                // So the SDK *MUST* collect info and submit it.
+
+                // HYPOTHESIS:
+                // 1. Merchant Server calls POST /payments (with minimal info?) -> No, it requires VPA/Method.
+                //    The API example shows `method: "upi", vpa: "..."`.
+                //    So the Payment creation INCLUDES the method.
+                //    So the Merchant Server collects method? No, that defeats the purpose of an SDK/Gateway.
+
+                // Alternative:
+                // 1. Merchant creates "Order".
+                // 2. SDK collects method/vpa.
+                // 3. SDK calls endpoint to "Create Payment" for that Order.
+                //    This endpoint should probably NOT require the API Secret if called from browser.
+                //    BUT the instructions say "Create Payment Endpoint... requires authentication... Extract credentials from headers".
+
+                // CONTRADICTION?
+                // The provided "Create Order" snippet calls http://localhost:8000/api/v1/orders (NOT payments).
+                // Wait, the PDF text said "Create Order" section: `curl ... /api/v1/orders`.
+                // But earlier "Modified Create Payment Endpoint": `POST /api/v1/payments`.
+                // And response has `order_id`.
+
+                // Maybe `POST /orders` is missing from my plan?
+                // "Create Order" snippet in PDF creates an order.
+                // Then SDK uses `orderId`.
+                // Use Case:
+                // 1. Merchant creates Order (Server to Server).
+                // 2. Merchant passes Order ID to SDK.
+                // 3. SDK collects Card/UPI.
+                // 4. SDK submits info + Order ID to Gateway.
+                // 5. Gateway creates "Payment" record linked to Order.
+
+                // If so, the "Create Payment" endpoint documented might be what the SDK calls?
+                // But it requires Secret.
+                // Maybe there's a different endpoint for the SDK? "POST /api/v1/checkout/pay"?
+                // The instructions don't explicitly document a "public" payment endpoint.
+
+                // WORKAROUND for Challenge:
+                // I will implement a proxy endpoint in the Checkout Service (Node server) `POST /pay`.
+                // This endpoint will receive the card data + order ID + API Key (public).
+                // It will then verify the API Key (maybe check DB).
+                // Then it will call the internal `POST /payments`... BUT it needs the Secret.
+                // Checking DB for the secret using the API Key? Yes.
+                // The Checkout Service needs DB access? Or it can call an internal "secure" endpoint.
+
+                // Let's implement:
+                // 1. Checkout Frontend sends data to Checkout Backend (Port 3001).
+                // 2. Checkout Backend (has DB access or similar) looks up Merchant by API Key.
+                // 3. Checkout Backend calls Core API `POST /payments` using the retrieved Secret.
+                //    This keeps Secret off the browser.
+
+                // Steps for Checkout Backend (`server.js`):
+                // - Add /api/pay endpoint.
+                // - Lookup merchant by `key`.
+                // - Construct request to Core API.
+
+                const res = await fetch('/api/pay', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        key: apiKey,
+                        order_id: orderId,
+                        amount: 5000, // Dummy, usually fetched from order
+                        currency: 'INR',
+                        method,
+                        vpa: method === 'upi' ? vpa : undefined
+                    })
+                });
+
+                const data = await res.json();
+
+                if (res.ok) {
+                    window.parent.postMessage({ type: 'payment_success', data }, '*');
+                } else {
+                    errorDiv.innerText = data.description || 'Payment failed';
+                    window.parent.postMessage({ type: 'payment_failed', data }, '*');
+                    btn.disabled = false;
+                    btn.innerText = 'Pay Now';
+                }
+
+            } catch (err) {
+                console.error(err);
+                errorDiv.innerText = 'Network Error';
+                btn.disabled = false;
+                btn.innerText = 'Pay Now';
+            }
+        });
+    </script>
+</body>
+
+</html>

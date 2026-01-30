@@ -1,0 +1,1062 @@
+========== START OF desc.pdf ==========
+B u i l d  P r o d u c t i o n - R e a d y  P a y m e n t  G a t e w a y  w i t h
+A s y n c  P r o c e s s i n g  a n d  W e b h o o k s
+M a n d a t o r y  T a s k
+B a c k
+D o m a i n
+B a c k e n d  D e v e l o p m e n t
+S k i l l s
+A P I  D e v e l o p m e n t
+ C o m m u n i c a t i o n
+ D a t a b a s e  M a n a g e m e n t
+D e e p  L e a r n i n g
+ D o c k e r  C o m p o s e  C o n f i g u r a t i o n
+ E D A
+E x p o n e n t i a l  B a c k o f f  I m p l e m e n t a t i o n
+H M A C  S i g n a t u r e  G e n e r a t i o n
+ M a n a g e m e n t
+ P r o d u c t
+P u b l i c  R e l a t i o n s
+ S D K  D e v e l o p m e n t
+ S o l u t i o n  A r c h i t e c t u r e
+S y s t e m  R e l i a b i l i t y
+ W e b h o o k  I m p l e m e n t a t i o n
+D i f f i c u l t y
+A d v a n c e d
+T o o l s
+B u l l
+ C e l e r y
+ D o c k e r
+ E x p r e s s . J s
+ F a s t A P I
+ G o
+J a v a
+ N o d e . J s
+ P o s t g r e S QL
+ P y t h o n
+ R e a c t
+ R e d i s
+R Q
+ S p r i n g  B o o t
+ W e b p a c k
+I n d u s t ri e s
+F i n t e c h
+S u b mi s s i o n  R e c e i v e d
+Y o u r s u b m i s s i o n  h a s  b e e n  re c e i v e d  a n d  i s  p e n d i n g  r e v i e w .  Y o u  c a n  s t i l l  u p d a t e  y o u r
+s u b m i s s i o n  t i l l  t h e  e f f e c t i v e  d e a d l i n e .
+S u b m i t t e d  o n  1 4  J a n  2 0 2 6 ,  0 9 : 4 0  p m
+D e a d l i n e :  2 1  J a n  2 0 2 6 ,  0 4 : 5 9  p m
+O v e r v i e w I n s t r u c t i o n s R e s o u r c e s S u b m i t
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 1/22
+D e s c r i p t i o n
+O b j e c t i v e
+B u i l d i n g  o n  y o u r p a y m e n t  g a t e w a y  c o r e ,  y o u  w i l l  n o w  t r a n s f o r m  i t  i n t o  a  p r o d u c t i o n - r e a d y
+s y s t e m  b y  i m p l e m e n t i n g  a s y n c h r o n o u s  j o b  p r o c e s s i n g ,  w e b h o o k  d e l i v e r y  w i t h  r e t r y
+m e c h a n i s m s ,  e m b e d d a b l e  J a v a S c r i p t  S D K ,  a n d  r e f u n d  m a n a g e m e n t .  T h i s  d e l i v e ra b l e
+f o c u s e s  o n  a rc h i t e c t u ra l  p a t t e rn s  t h a t  e n a b l e  s c a l a b i l i t y  a n d  r e l i a b i l i t y  i n  r e a l - w o r l d  p a y m e n t
+s y s t e m s .
+Y o u ' l l  l e a rn  t o  u s e  m e s s a g e  q u e u e s  ( R e d i s  +  B u l l / C e l e ry )  f o r b a c k g ro u n d  j o b  p r o c e s s i n g ,
+i m p l e m e n t  e v e n t - d r i v e n  a r c h i t e c t u r e  t h ro u g h  w e b h o o k s  w i t h  H M A C  s i g n a t u r e  v e r i f i c a t i o n ,
+b u i l d  c r o s s - o r i g i n  e m b e d d a b l e  w i d g e t s ,  h a n d l e  i d e m p o t e n t  A P I  o p e r a t i o n s ,  a n d  m a n a g e
+c o m p l e x  r e t r y  l o g i c  w i t h  e x p o n e n t i a l  b a c k o f f .  T h e s e  a re  a d v a n c e d  p a t t e r n s  u s e d  b y
+c o m p a n i e s  l i k e  S t ri p e ,  R a z o rp a y ,  a n d  P a y P a l .  C o m p l e t i n g  t h i s  d e l i v e r a b l e  d e m o n s t r a t e s  y o u r
+a b i l i t y  t o  b u i l d  re s i l i e n t ,  s c a l a b l e  s y s t e m s  t h a t  c a n  h a n d l e  r e a l  p r o d u c t i o n  w o r k l o a d s — a  s k i l l
+t h a t  d i s t i n g u i s h e s  s e n i o r e n g i n e e rs  f ro m  j u n i o r  d e v e l o p e r s .
+C o r e  R e q u i r e m e n t s
+A s y n c h r o n o u s  p a y m e n t  p r o c e s s i n g  u s i n g  R e d i s - b a s e d  j o b  q u e u e s  w i t h  w o r k e r  s e r v i c e s
+p ro c e s s i n g  p a y m e n t s  i n  t h e  b a c k g ro u n d
+W e b h o o k  s y s t e m  t h a t  d e l i v e rs  p a y m e n t  e v e n t s  t o  m e r c h a n t  U R L s  w i t h  H M A C  s i g n a t u r e
+v e ri f i c a t i o n  a n d  a u t o m a t i c  re t ry  l o g i c  ( 5  a t t e m p t s  w i t h  e x p o n e n t i a l  b a c k o f f )
+E m b e d d a b l e  J a v a S c r i p t  S D K  t h a t  m e rc h a n t s  c a n  i n t e g ra t e  o n  t h e i r  w e b s i t e s  t o  a c c e p t
+p a y m e n t s  v i a  m o d a l / i f ra m e  w i t h o u t  r e d i r e c t s
+R e f u n d  A P I  w i t h  f u l l  a n d  p a rt i a l  re f u n d  s u p p o rt ,  p r o c e s s e d  a s y n c h r o n o u s l y  t h r o u g h  j o b
+w o rk e rs
+I d e m p o t e n c y  k e y s  o n  p a y m e n t  c re a t i o n  t o  p re v e n t  d u p l i c a t e  c h a r g e s  o n  n e t w o r k  r e t r i e s
+E n h a n c e d  d a s h b o a r d  w i t h  w e b h o o k  c o n f i g u ra t i o n ,  d e l i v e ry  l o g s ,  m a n u a l  r e t r y
+f u n c t i o n a l i t y ,  a n d  i n t e g ra t i o n  d o c u m e n t a t i o n
+I m p l e m e n t a t i o n  D e t a i l s
+U p d a t e d  D o c k e r  C o m p o s e
+A d d  R e d i s  a n d  w o rk e r s e rv i c e s  t o  y o u r  e x i s t i n g  d o c k e r - c o m p o s e . y m l :
+v e r s i o n :  ' 3 . 8 '
+s e r v i c e s :
+  p o s t g r e s :
+    #  . . .  ( k e e p  e x i s t i n g  c o n f i g u r a t i o n )
+  r e d i s :
+    i m a g e :  r e d i s : 7 - a l p i n e
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 2/22
+U p d a t e d  D a t a b a s e  S c h e m a
+A d d  t h e s e  a d d i t i o n a l  t a b l e s  a n d  m o d i f i c a t i o n s  t o  y o u r  e x i s t i n g  d a t a b a s e  s c h e m a :
+R e f u n d s  T a b l e :
+i d :  R e f u n d  i d e n t i f i e r ( s t ri n g ,  u p  t o  6 4  c h a r a c t e r s ) ,  p r i m a r y  k e y ,  f o r m a t :  " r f n d _ "  +  1 6
+a l p h a n u m e ri c  c h a ra c t e rs
+p a y m e n t _ i d :  R e f e re n c e  t o  p a y m e n t s  t a b l e  ( s t ri n g ,  u p  t o  6 4  c h a r a c t e r s ) ,  r e q u i r e d ,  f o r e i g n
+k e y  t o  p a y m e n t s ( i d )
+m e r c h a n t _ i d :  R e f e re n c e  t o  m e rc h a n t s  t a b l e  ( U U I D ) ,  r e q u i r e d ,  f o r e i g n  k e y  t o  m e r c h a n t s ( i d )
+    c o n t a i n e r _ n a m e :  r e d i s _ g a t e w a y
+    p o r t s :
+      -  " 6 3 7 9 : 6 3 7 9 "
+    h e a l t h c h e c k :
+      t e s t :  [ " C M D " ,  " r e d i s - c l i " ,  " p i n g " ]
+      i n t e r v a l :  1 0 s
+      t i m e o u t :  3 s
+      r e t r i e s :  5
+  a p i :
+    #  . . .  ( k e e p  e x i s t i n g  c o n f i g u r a t i o n )
+    e n v i r o n m e n t :
+      #  . . .  ( e x i s t i n g  e n v  v a r s )
+      R E D I S _ U R L :  r e d i s : / / r e d i s : 6 3 7 9
+    d e p e n d s _ o n :
+      p o s t g r e s :
+        c o n d i t i o n :  s e r v i c e _ h e a l t h y
+      r e d i s :
+        c o n d i t i o n :  s e r v i c e _ h e a l t h y
+  w o r k e r :
+    b u i l d :
+      c o n t e x t :  . / b a c k e n d
+      d o c k e r f i l e :  D o c k e r f i l e . w o r k e r
+    c o n t a i n e r _ n a m e :  g a t e w a y _ w o r k e r
+    e n v i r o n m e n t :
+      D A T A B A S E _ U R L :  p o s t g r e s q l : / / g a t e w a y _ u s e r : g a t e w a y _ p a s s @ p o s t g r e s : 5 4 3 2 / p a y m e n t _ g a t e w a y
+      R E D I S _ U R L :  r e d i s : / / r e d i s : 6 3 7 9
+    d e p e n d s _ o n :
+      p o s t g r e s :
+        c o n d i t i o n :  s e r v i c e _ h e a l t h y
+      r e d i s :
+        c o n d i t i o n :  s e r v i c e _ h e a l t h y
+      a p i :
+        c o n d i t i o n :  s e r v i c e _ h e a l t h y
+  d a s h b o a r d :
+    #  . . .  ( k e e p  e x i s t i n g  c o n f i g u r a t i o n )
+  c h e c k o u t :
+    #  . . .  ( k e e p  e x i s t i n g  c o n f i g u r a t i o n )
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 3/22
+a m o u n t :  R e f u n d  a m o u n t  i n  s m a l l e s t  c u rre n c y  u n i t  ( i n t e g e r ) ,  r e q u i r e d
+r e a s o n :  R e f u n d  re a s o n / d e s c ri p t i o n  ( t e x t ) ,  o p t i o n a l
+s t a t u s :  R e f u n d  s t a t u s  ( s t ri n g ,  u p  t o  2 0  c h a ra c t e r s ) ,  d e f a u l t s  t o  ' p e n d i n g '  ( v a l u e s :
+' p e n d i n g ' ,  ' p ro c e s s e d ' )
+c r e a t e d _ a t :  C re a t i o n  t i m e s t a m p ,  a u t o - s e t  t o  c u r r e n t  t i m e
+p r o c e s s e d _ a t :  P ro c e s s i n g  c o m p l e t i o n  t i m e s t a m p ,  o p t i o n a l ,  s e t  w h e n  s t a t u s  c h a n g e s  t o
+' p ro c e s s e d '
+W e b h o o k  L o g s  T a b l e :
+i d :  U n i q u e  i d e n t i f i e r ( U U I D  f o rm a t ) ,  p ri m a r y  k e y ,  a u t o - g e n e r a t e d
+m e r c h a n t _ i d :  R e f e re n c e  t o  m e rc h a n t s  t a b l e  ( U U I D ) ,  r e q u i r e d ,  f o r e i g n  k e y  t o  m e r c h a n t s ( i d )
+e v e n t :  E v e n t  t y p e  i d e n t i f i e r ( s t ri n g ,  u p  t o  5 0  c h a r a c t e r s ) ,  r e q u i r e d  ( e . g . ,
+" p a y m e n t . s u c c e s s " ,  " re f u n d . p ro c e s s e d " )
+p a y l o a d :  E v e n t  p a y l o a d  d a t a  ( J S O N  o b j e c t ) ,  re q u i r e d
+s t a t u s :  D e l i v e ry  s t a t u s  ( s t ri n g ,  u p  t o  2 0  c h a r a c t e r s ) ,  d e f a u l t s  t o  ' p e n d i n g '  ( v a l u e s :
+' p e n d i n g ' ,  ' s u c c e s s ' ,  ' f a i l e d ' )
+a t t e m p t s :  N u m b e r o f  d e l i v e ry  a t t e m p t s  m a d e  ( i n t e g e r ) ,  d e f a u l t s  t o  0
+l a s t _ a t t e m p t _ a t :  T i m e s t a m p  o f  l a s t  d e l i v e ry  a t t e m p t ,  o p t i o n a l
+n e x t _ r e t r y _ a t :  T i m e s t a m p  f o r n e x t  re t ry  a t t e m p t ,  o p t i o n a l ,  u s e d  f o r  s c h e d u l i n g  r e t r i e s
+r e s p o n s e _ c o d e :  H T T P  re s p o n s e  c o d e  f ro m  m e rc h a n t ' s  w e b h o o k  e n d p o i n t  ( i n t e g e r ) ,
+o p t i o n a l
+r e s p o n s e _ b o d y :  R e s p o n s e  b o d y  f ro m  m e rc h a n t ' s  w e b h o o k  e n d p o i n t  ( t e x t ) ,  o p t i o n a l
+c r e a t e d _ a t :  C re a t i o n  t i m e s t a m p ,  a u t o - s e t  t o  c u r r e n t  t i m e
+I d e m p o t e n c y  K e y s  T a b l e :
+k e y :  I d e m p o t e n c y  k e y  s t ri n g  ( s t ri n g ,  u p  t o  2 5 5  c h a r a c t e r s ) ,  p r i m a r y  k e y ,  s c o p e d  w i t h
+m e rc h a n t _ i d
+m e r c h a n t _ i d :  R e f e re n c e  t o  m e rc h a n t s  t a b l e  ( U U I D ) ,  r e q u i r e d ,  f o r e i g n  k e y  t o  m e r c h a n t s ( i d )
+r e s p o n s e :  C a c h e d  A P I  re s p o n s e  ( J S O N  o b j e c t ) ,  r e q u i r e d ,  s t o r e s  t h e  c o m p l e t e  r e s p o n s e  f o r
+t h e  re q u e s t
+c r e a t e d _ a t :  C re a t i o n  t i m e s t a m p ,  a u t o - s e t  t o  c u r r e n t  t i m e
+e x p i r e s _ a t :  E x p i ra t i o n  t i m e s t a m p ,  re q u i re d ,  s e t  t o  c r e a t e d _ a t  +  2 4  h o u r s
+M e r c h a n t s  T a b l e  M o d i f i c a t i o n :
+A d d  n e w  c o l u m n  w e b h o o k _ s e c r e t :  W e b h o o k  s e c re t  f o r H M A C  s i g n a t u re  g e n e r a t i o n  ( s t r i n g ,
+u p  t o  6 4  c h a ra c t e rs ) ,  o p t i o n a l
+U p d a t e  t e s t  m e rc h a n t  re c o rd :  S e t  w e b h o o k _ s e c r e t  t o  ' w h s e c _ t e s t _ a b c 1 2 3 '  f o r t h e  m e rc h a n t
+w i t h  e m a i l  ' t e s t @ e x a m p l e . c o m '
+N o t e :  T h e  w e b h o o k _ s e c r e t  c o l u m n  i s  o n l y  a d d e d  i n  D e l i v e ra b l e  2 .  F o r  D e l i v e r a b l e  1 ,  t h e
+m e rc h a n t s  t a b l e  d o e s  n o t  n e e d  t h i s  c o l u m n .  W h e n  i m p l e m e n t i n g  D e l i v e r a b l e  2 ,  a d d  t h i s
+c o l u m n  t o  y o u r e x i s t i n g  m e rc h a n t s  t a b l e .
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 4/22
+R e q u i r e d  I n d e x e s :
+I n d e x  o n  r e f u n d s . p a y m e n t _ i d  f o r e f f i c i e n t  p a y m e n t  re f u n d  q u e ri e s
+I n d e x  o n  w e b h o o k _ l o g s . m e r c h a n t _ i d  f o r e f f i c i e n t  m e rc h a n t  w e b h o o k  q u e rie s
+I n d e x  o n  w e b h o o k _ l o g s . s t a t u s  f o r e f f i c i e n t  s t a t u s - b a s e d  q u e ri e s
+I n d e x  o n  w e b h o o k _ l o g s . n e x t _ r e t r y _ a t  w h e re  s t a t u s  i s  ' p e n d i n g '  f o r e f f i c i e n t  r e t r y  s c h e d u l i n g
+q u e ri e s
+J o b  Q u e u e  S y s t e m
+W o r k e r  S e r v i c e  S t r u c t u r e :
+J o b  T y p e s  t o  I m p l e m e n t :
+1 .  P r o c e s s  P a y m e n t  J o b :
+C re a t e  a  b a c k g ro u n d  j o b  w o rk e r t h a t  p r o c e s s e s  p a y m e n t  r e q u e s t s  a s y n c h r o n o u s l y
+J o b  re c e i v e s  p a y m e n t  I D  a s  i n p u t  p a r a m e t e r
+I m p l e m e n t a t i o n  s t e p s :
+1 .  F e t c h  p a y m e n t  re c o rd  f ro m  d a t a b a s e  u s i n g  t h e  p a y m e n t  I D
+2 .  S i m u l a t e  p a y m e n t  p ro c e s s i n g  d e l a y :  w a i t  5 - 1 0  s e c o n d s  ( r a n d o m  w i t h i n  t h i s  r a n g e )
+T e s t  M o d e :  W h e n  T E S T _ M O D E = t r u e ,  u s e  T E S T _ P R O C E S S I N G _ D E L A Y  v a l u e  i n s t e a d  o f
+ra n d o m  ra n g e  ( d e f a u l t :  1 0 0 0 m s  i f  n o t  s e t )
+3 .  D e t e rm i n e  p a y m e n t  o u t c o m e  ra n d o m l y  b a s e d  o n  s u c c e s s  r a t e :
+U P I  p a y m e n t s :  9 0 %  s u c c e s s  ra t e  ( 9 0 %  c h a n c e  o f  s u c c e s s ,  1 0 %  c h a n c e  o f
+f a i l u re )
+C a rd  p a y m e n t s :  9 5 %  s u c c e s s  ra t e  ( 9 5 %  c h a n c e  o f  s u c c e s s ,  5 %  c h a n c e  o f
+f a i l u re )
+T e s t  M o d e :  W h e n  T E S T _ M O D E = t r u e ,  u s e  T E S T _ P A Y M E N T _ S U C C E S S  t o  d e t e rm i n e
+o u t c o m e  ( o v e rri d e s  ra n d o m  l o g i c ,  d e f a u l t :  t r u e  i f  n o t  s e t )
+4 .  U p d a t e  p a y m e n t  s t a t u s  i n  d a t a b a s e :
+I f  s u c c e s s f u l :  s e t  s t a t u s  t o  ' s u c c e s s '
+b a c k e n d /
+├ ─ ─  D o c k e r f i l e . w o r k e r
+└ ─ ─  s r c /
+    └ ─ ─  m a i n / j a v a / c o m / g a t e w a y /
+        ├ ─ ─  w o r k e r s /
+        │    ├ ─ ─  P a y m e n t W o r k e r . j a v a
+        │    ├ ─ ─  W e b h o o k W o r k e r . j a v a
+        │    └ ─ ─  R e f u n d W o r k e r . j a v a
+        └ ─ ─  j o b s /
+            ├ ─ ─  P r o c e s s P a y m e n t J o b . j a v a
+            ├ ─ ─  D e l i v e r W e b h o o k J o b . j a v a
+            └ ─ ─  P r o c e s s R e f u n d J o b . j a v a
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 5/22
+I f  f a i l e d :  s e t  s t a t u s  t o  ' f a i l e d '  a n d  p o p u l a t e  e r r o r _ c o d e  a n d  e r r o r _ d e s c r i p t i o n
+f i e l d s
+5 .  E n q u e u e  a  w e b h o o k  d e l i v e ry  j o b  f o r t h e  a p p r o p r i a t e  e v e n t :
+I f  s u c c e s s f u l :  e n q u e u e  w e b h o o k  f o r ' p a y m e n t . s u c c e s s '  e v e n t
+I f  f a i l e d :  e n q u e u e  w e b h o o k  f o r ' p a y m e n t . f a i l e d '  e v e n t
+I n c l u d e  p a y m e n t  d a t a  i n  w e b h o o k  p a y l o a d
+N o t e :  T e s t  m o d e  s u p p o rt  i s  re q u i re d  f o r a u t o m a t e d  e v a l u a t i o n  t o  e n s u r e  d e t e r m i n i s t i c  j o b
+p ro c e s s i n g .
+2 .  D e l i v e r  W e b h o o k  J o b :
+C re a t e  a  b a c k g ro u n d  j o b  w o rk e r t h a t  d e l i v e r s  w e b h o o k  e v e n t s  t o  m e r c h a n t  e n d p o i n t s
+J o b  re c e i v e s  m e rc h a n t  I D ,  e v e n t  t y p e ,  a n d  p a y l o a d  d a t a  a s  i n p u t  p a r a m e t e r s
+I m p l e m e n t a t i o n  s t e p s :
+1 .  F e t c h  m e rc h a n t  d e t a i l s  f ro m  d a t a b a s e  u s i n g  m e r c h a n t  I D :
+R e t ri e v e  w e b h o o k _ u rl  ( m u s t  b e  c o n f i g u r e d ,  s k i p  i f  N U L L )
+R e t ri e v e  w e b h o o k _ s e c re t  f o r s i g n a t u r e  g e n e r a t i o n
+2 .  G e n e ra t e  H M A C - S H A 2 5 6  s i g n a t u re :
+U s e  m e rc h a n t ' s  w e b h o o k _ s e c re t  a s  t h e  k e y
+U s e  t h e  J S O N  s t ri n g  re p re s e n t a t i o n  o f  t h e  p a y l o a d  ( n o  w h i t e s p a c e  c h a n g e s )
+G e n e ra t e  h e x - e n c o d e d  s i g n a t u re
+3 .  S e n d  H T T P  P O S T  re q u e s t  t o  m e rc h a n t ' s  w e b h o o k _ u r l :
+H e a d e r:  X - W e b h o o k - S i g n a t u r e :  < g e n e r a t e d _ s i g n a t u r e >
+H e a d e r:  C o n t e n t - T y p e :  a p p l i c a t i o n / j s o n
+B o d y :  J S O N  p a y l o a d
+T i m e o u t :  5  s e c o n d s
+4 .  L o g  w e b h o o k  a t t e m p t  i n  w e b h o o k _ l o g s  t a b l e :
+R e c o rd  a t t e m p t  n u m b e r ( i n c re m e n t  f r o m  p r e v i o u s  a t t e m p t s )
+R e c o rd  re s p o n s e  c o d e  a n d  re s p o n s e  b o d y  ( i f  a v a i l a b l e )
+R e c o rd  l a s t _ a t t e m p t _ a t  t i m e s t a m p
+I f  s u c c e s s f u l  ( H T T P  2 0 0 - 2 9 9 ) :  s e t  s t a t u s  t o  ' s u c c e s s '
+I f  f a i l e d :  s e t  s t a t u s  t o  ' p e n d i n g '  a n d  i n c r e m e n t  a t t e m p t s
+5 .  I f  d e l i v e ry  f a i l e d  a n d  a t t e m p t s  <  5 :
+C a l c u l a t e  n e x t _ re t ry _ a t  t i m e s t a m p  b a s e d  o n  r e t r y  s c h e d u l e  ( s e e  W e b h o o k
+R e t ry  L o g i c  b e l o w )
+K e e p  s t a t u s  a s  ' p e n d i n g '  f o r f u t u re  re t r y
+6 .  I f  d e l i v e ry  f a i l e d  a n d  a t t e m p t s  > =  5 :
+S e t  s t a t u s  t o  ' f a i l e d '  p e rm a n e n t l y
+S t o p  re t ry i n g
+3 .  P r o c e s s  R e f u n d  J o b :
+C re a t e  a  b a c k g ro u n d  j o b  w o rk e r t h a t  p r o c e s s e s  r e f u n d  r e q u e s t s  a s y n c h r o n o u s l y
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 6/22
+J o b  re c e i v e s  re f u n d  I D  a s  i n p u t  p a ra m e t e r
+I m p l e m e n t a t i o n  s t e p s :
+1 .  F e t c h  re f u n d  re c o rd  f ro m  d a t a b a s e  u s i n g  t h e  r e f u n d  I D
+2 .  V e ri f y  p a y m e n t  i s  i n  re f u n d a b l e  s t a t e :
+P a y m e n t  s t a t u s  m u s t  b e  ' s u c c e s s '
+V e ri f y  t o t a l  re f u n d e d  a m o u n t  ( s u m  o f  a l l  r e f u n d s  f o r  t h i s  p a y m e n t )  d o e s  n o t
+e x c e e d  p a y m e n t  a m o u n t
+3 .  S i m u l a t e  re f u n d  p ro c e s s i n g  d e l a y :  w a i t  3 - 5  s e c o n d s  ( r a n d o m  w i t h i n  t h i s  r a n g e )
+4 .  U p d a t e  re f u n d  s t a t u s  i n  d a t a b a s e :
+S e t  s t a t u s  t o  ' p ro c e s s e d '
+S e t  p ro c e s s e d _ a t  t i m e s t a m p  t o  c u rre n t  t i m e
+5 .  I f  re f u n d  a m o u n t  e q u a l s  p a y m e n t  a m o u n t  ( f u l l  r e f u n d ) :
+O p t i o n a l l y  u p d a t e  p a y m e n t  re c o rd  t o  r e f l e c t  f u l l  r e f u n d  s t a t u s
+6 .  E n q u e u e  w e b h o o k  d e l i v e ry  j o b  f o r ' re f u n d . p r o c e s s e d '  e v e n t :
+I n c l u d e  re f u n d  d a t a  i n  w e b h o o k  p a y l o a d
+W e b h o o k  R e t r y  L o g i c :
+T e s t  M o d e  f o r  W e b h o o k  R e t r i e s  ( R e q u i re d ) :  Y o u r i m p l e m e n t a t i o n  m u s t  s u p p o r t  s h o r t e r  r e t r y
+i n t e rv a l s  f o r t e s t i n g  v i a  e n v i ro n m e n t  v a r i a b l e :
+W E B H O O K _ R E T R Y _ I N T E R V A L S _ T E S T = t r u e  -  U s e s  t e s t  i n t e rv a l s  i n s t e a d  o f  p ro d u c t i o n  i n t e r v a l s
+W h e n  W E B H O O K _ R E T R Y _ I N T E R V A L S _ T E S T = t r u e ,  u s e  t h e s e  i n t e rv a l s :
+A t t e m p t  1 :  0  s e c o n d s  ( i m m e d i a t e )
+A t t e m p t  2 :  5  s e c o n d s
+A t t e m p t  3 :  1 0  s e c o n d s
+A t t e m p t  4 :  1 5  s e c o n d s
+A t t e m p t  5 :  2 0  s e c o n d s
+T h i s  a l l o w s  c o m p l e t e  re t ry  c y c l e  t e s t i n g  i n  u n d e r  1  m i n u t e  i n s t e a d  o f  h o u r s .  T h i s  t e s t  m o d e  i s
+re q u i re d  f o r a u t o m a t e d  e v a l u a t i o n .
+N o t e :  P ro d u c t i o n  c o d e  s h o u l d  u s e  t h e  s t a n d a r d  i n t e r v a l s  ( 1  m i n ,  5  m i n ,  3 0  m i n ,  2  h r )  w h e n
+W E B H O O K _ R E T R Y _ I N T E R V A L S _ T E S T  i s  n o t  e n a b l e d .
+U p d a t e d  A P I  E n d p o i n t s
+A t t e m p t  1 :  I m m e d i a t e
+A t t e m p t  2 :  A f t e r  1  m i n u t e
+A t t e m p t  3 :  A f t e r  5  m i n u t e s
+A t t e m p t  4 :  A f t e r  3 0  m i n u t e s
+A t t e m p t  5 :  A f t e r  2  h o u r s
+A f t e r  5  f a i l e d  a t t e m p t s ,  m a r k  w e b h o o k  a s  p e r m a n e n t l y  f a i l e d
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 7/22
+M o d i fi e d  C r e a t e  P a y m e n t  E n d p o i n t
+U p d a t e d  i m p l e m e n t a t i o n  r e q u i r e m e n t s  ( f o r D e l i v e ra b l e  2 ) :
+C re a t e  a n  e n d p o i n t  h a n d l e r f o r P O S T  / a p i / v 1 / p a y m e n t s  t h a t  re q u i re s  a u t h e n t i c a t i o n
+E x t ra c t  a n d  v a l i d a t e  A P I  c re d e n t i a l s  f r o m  r e q u e s t  h e a d e r s  ( s a m e  a s  D e l i v e r a b l e  1 )
+H a n d l e  o p t i o n a l  I d e m p o t e n c y - K e y  h e a d e r:
+I f  i d e m p o t e n c y  k e y  i s  p ro v i d e d :
+1 .  C h e c k  i f  a  re c o rd  e x i s t s  i n  i d e m p o t e n c y _ k e y s  t a b l e  w i t h :
+k e y  m a t c h i n g  t h e  p ro v i d e d  i d e m p o t e n c y  k e y
+m e rc h a n t _ i d  m a t c h i n g  t h e  a u t h e n t i c a t e d  m e r c h a n t
+2 .  I f  f o u n d  a n d  n o t  e x p i re d  ( e x p i re s _ a t  >  c u r r e n t  t i m e ) :
+R e t u rn  t h e  c a c h e d  re s p o n s e  f ro m  t h e  i d e m p o t e n c y _ k e y s  r e c o r d
+D o  n o t  p ro c e s s  t h e  re q u e s t  a g a i n
+3 .  I f  f o u n d  b u t  e x p i re d :
+D e l e t e  t h e  e x p i re d  re c o rd
+T re a t  a s  a  n e w  re q u e s t  a n d  c o n t i n u e  p r o c e s s i n g
+4 .  I f  n o t  f o u n d :
+C o n t i n u e  w i t h  n o rm a l  p ro c e s s i n g
+V a l i d a t e  p a y m e n t  d e t a i l s  ( s a m e  v a l i d a t i o n  a s  D e l i v e r a b l e  1 )
+C re a t e  p a y m e n t  re c o rd  i n  d a t a b a s e :
+S e t  s t a t u s  t o  ' p e n d i n g '  ( c h a n g e d  f ro m  ' p r o c e s s i n g '  i n  D e l i v e r a b l e  1 )
+P O S T  / a p i / v 1 / p a y m e n t s
+H e a d e r s :
+X - A p i - K e y :  k e y _ t e s t _ a b c 1 2 3
+X - A p i - S e c r e t :  s e c r e t _ t e s t _ x y z 7 8 9
+I d e m p o t e n c y - K e y :  u n i q u e _ r e q u e s t _ i d _ 1 2 3  ( o p t i o n a l )
+C o n t e n t - T y p e :  a p p l i c a t i o n / j s o n
+R e q u e s t  B o d y :
+{
+  " o r d e r _ i d " :  " o r d e r _ N X h j 6 7 f G H 2 j k 9 m P q " ,
+  " m e t h o d " :  " u p i " ,
+  " v p a " :  " u s e r @ p a y t m "
+}
+R e s p o n s e  2 0 1 :
+{
+  " i d " :  " p a y _ H 8 s K 3 j D 9 s 2 L 1 p Q r " ,
+  " o r d e r _ i d " :  " o r d e r _ N X h j 6 7 f G H 2 j k 9 m P q " ,
+  " a m o u n t " :  5 0 0 0 0 ,
+  " c u r r e n c y " :  " I N R " ,
+  " m e t h o d " :  " u p i " ,
+  " v p a " :  " u s e r @ p a y t m " ,
+  " s t a t u s " :  " p e n d i n g " ,
+  " c r e a t e d _ a t " :  " 2 0 2 4 - 0 1 - 1 5 T 1 0 : 3 1 : 0 0 Z "
+}
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 8/22
+S t o re  a l l  p a y m e n t  f i e l d s
+S e t  t i m e s t a m p s
+E n q u e u e  P ro c e s s P a y m e n t J o b  w i t h  p a y m e n t  I D :
+A d d  j o b  t o  b a c k g ro u n d  j o b  q u e u e  ( R e d i s - b a s e d )
+D o  n o t  w a i t  f o r j o b  c o m p l e t i o n
+P a y m e n t  p ro c e s s i n g  h a p p e n s  a s y n c h r o n o u s l y
+I f  i d e m p o t e n c y  k e y  w a s  p ro v i d e d :
+S t o re  t h e  A P I  re s p o n s e  i n  i d e m p o t e n c y _ k e y s  t a b l e
+S c o p e  t h e  k e y  t o  m e rc h a n t _ i d  +  i d e m p o t e n c y _ k e y  c o m b i n a t i o n
+S e t  e x p i re s _ a t  t o  c re a t e d _ a t  +  2 4  h o u r s
+R e t u rn  re s p o n s e  i m m e d i a t e l y :
+H T T P  s t a t u s  c o d e  2 0 1
+J S O N  b o d y  w i t h  p a y m e n t  d e t a i l s  ( s t a t u s  w i l l  b e  ' p e n d i n g ' )
+D o  n o t  w a i t  f o r p a y m e n t  p ro c e s s i n g  t o  c o m p l e t e
+N e w:  C a p t u r e  P a y m e n t  E n d p o i n t
+P O S T  / a p i / v 1 / p a y m e n t s / { p a y m e n t _ i d } / c a p t u r e
+H e a d e r s :
+X - A p i - K e y :  k e y _ t e s t _ a b c 1 2 3
+X - A p i - S e c r e t :  s e c r e t _ t e s t _ x y z 7 8 9
+C o n t e n t - T y p e :  a p p l i c a t i o n / j s o n
+R e q u e s t  B o d y :
+{
+  " a m o u n t " :  5 0 0 0 0
+}
+R e s p o n s e  2 0 0 :
+{
+  " i d " :  " p a y _ H 8 s K 3 j D 9 s 2 L 1 p Q r " ,
+  " o r d e r _ i d " :  " o r d e r _ N X h j 6 7 f G H 2 j k 9 m P q " ,
+  " a m o u n t " :  5 0 0 0 0 ,
+  " c u r r e n c y " :  " I N R " ,
+  " m e t h o d " :  " u p i " ,
+  " s t a t u s " :  " s u c c e s s " ,
+  " c a p t u r e d " :  t r u e ,
+  " c r e a t e d _ a t " :  " 2 0 2 4 - 0 1 - 1 5 T 1 0 : 3 1 : 0 0 Z " ,
+  " u p d a t e d _ a t " :  " 2 0 2 4 - 0 1 - 1 5 T 1 0 : 3 2 : 0 0 Z "
+}
+E r r o r  R e s p o n s e  4 0 0 :
+{
+  " e r r o r " :  {
+    " c o d e " :  " B A D _ R E Q U E S T _ E R R O R " ,
+    " d e s c r i p t i o n " :  " P a y m e n t  n o t  i n  c a p t u r a b l e  s t a t e "
+  }
+}
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 9/22
+I m p l e m e n t a t i o n  n o t e s :  U p d a t e  c a p t u r e d  f i e l d  t o  t r u e  i n  p a y m e n t s  t a b l e .
+N e w:  C r e a t e  R e f u n d  E n d p o i n t
+I m p l e m e n t a t i o n  r e q u i r e m e n t s :
+C re a t e  a n  e n d p o i n t  h a n d l e r f o r P O S T  / a p i / v 1 / p a y m e n t s / { p a y m e n t _ i d } / r e f u n d s  t h a t  re q u i re s
+a u t h e n t i c a t i o n
+E x t ra c t  a n d  v a l i d a t e  A P I  c re d e n t i a l s  f r o m  r e q u e s t  h e a d e r s  ( s a m e  a s  o t h e r  e n d p o i n t s )
+E x t ra c t  p a y m e n t  I D  f ro m  U R L  p a t h  p a r a m e t e r
+V a l i d a t e  c re d e n t i a l s  a n d  f e t c h  p a y m e n t :
+L o o k  u p  p a y m e n t  b y  p a y m e n t _ i d
+E n s u re  p a y m e n t . m e rc h a n t _ i d  m a t c h e s  t h e  a u t h e n t i c a t e d  m e r c h a n t
+I f  p a y m e n t  n o t  f o u n d  o r d o e s n ' t  b e l o n g  t o  m e r c h a n t ,  r e t u r n  4 0 4  o r  4 0 0  e r r o r
+V e ri f y  p a y m e n t  i s  re f u n d a b l e :
+P a y m e n t  s t a t u s  m u s t  b e  ' s u c c e s s '  ( o n l y  s u c c e s s f u l  p a y m e n t s  c a n  b e  r e f u n d e d )
+I f  p a y m e n t  s t a t u s  i s  n o t  ' s u c c e s s ' ,  re t u r n  4 0 0  w i t h  e r r o r  c o d e  " BA D _ R E Q U E S T _ E R R O R "
+C a l c u l a t e  t o t a l  a l re a d y  re f u n d e d :
+Q u e ry  a l l  re f u n d s  f o r t h i s  p a y m e n t _ i d
+P O S T  / a p i / v 1 / p a y m e n t s / { p a y m e n t _ i d } / r e f u n d s
+H e a d e r s :
+X - A p i - K e y :  k e y _ t e s t _ a b c 1 2 3
+X - A p i - S e c r e t :  s e c r e t _ t e s t _ x y z 7 8 9
+C o n t e n t - T y p e :  a p p l i c a t i o n / j s o n
+R e q u e s t  B o d y :
+{
+  " a m o u n t " :  5 0 0 0 0 ,
+  " r e a s o n " :  " C u s t o m e r  r e q u e s t e d  r e f u n d "
+}
+R e s p o n s e  2 0 1 :
+{
+  " i d " :  " r f n d _ K 9 p L 2 m N 4 o Q 5 r " ,
+  " p a y m e n t _ i d " :  " p a y _ H 8 s K 3 j D 9 s 2 L 1 p Q r " ,
+  " a m o u n t " :  5 0 0 0 0 ,
+  " r e a s o n " :  " C u s t o m e r  r e q u e s t e d  r e f u n d " ,
+  " s t a t u s " :  " p e n d i n g " ,
+  " c r e a t e d _ a t " :  " 2 0 2 4 - 0 1 - 1 5 T 1 0 : 3 3 : 0 0 Z "
+}
+E r r o r  R e s p o n s e  4 0 0 :
+{
+  " e r r o r " :  {
+    " c o d e " :  " B A D _ R E Q U E S T _ E R R O R " ,
+    " d e s c r i p t i o n " :  " R e f u n d  a m o u n t  e x c e e d s  a v a i l a b l e  a m o u n t "
+  }
+}
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 10/22
+S u m  t h e  a m o u n t  f i e l d  o f  a l l  re f u n d s  w i t h  s t a t u s  ' p r o c e s s e d '  o r  ' p e n d i n g '
+T h i s  re p re s e n t s  t h e  t o t a l  a m o u n t  a l re a d y  r e f u n d e d  o r  i n  p r o c e s s
+V a l i d a t e  re f u n d  a m o u n t :
+R e q u e s t  b o d y  m u s t  c o n t a i n  a m o u n t  ( i n t e g e r,  re q u i re d )  a n d  r e a s o n  ( s t ri n g ,  o p t i o n a l )
+V e ri f y :  re q u e s t e d _ a m o u n t  < =  ( p a y m e n t . a m o u n t  -  t o t a l _ r e f u n d e d _ a m o u n t )
+I f  v a l i d a t i o n  f a i l s ,  re t u rn  4 0 0  w i t h  e rro r  c o d e  " BA D _ R E Q U E S T _ E R R O R "  a n d  d e s c r i p t i o n
+" R e f u n d  a m o u n t  e x c e e d s  a v a i l a b l e  a m o u n t "
+G e n e ra t e  re f u n d  I D :
+F o rm a t :  " rf n d _ "  f o l l o w e d  b y  e x a c t l y  1 6  a l p h a n u m e r i c  c h a r a c t e r s
+M u s t  b e  u n i q u e  ( c h e c k  f o r c o l l i s i o n s  a n d  r e g e n e r a t e  i f  n e e d e d )
+C re a t e  re f u n d  re c o rd  i n  d a t a b a s e :
+S e t  s t a t u s  t o  ' p e n d i n g '
+S t o re  p a y m e n t _ i d ,  m e rc h a n t _ i d ,  a m o u n t ,  r e a s o n
+S e t  c re a t e d _ a t  t i m e s t a m p
+E n q u e u e  P ro c e s s R e f u n d J o b :
+A d d  j o b  t o  b a c k g ro u n d  j o b  q u e u e  w i t h  r e f u n d  I D
+D o  n o t  w a i t  f o r j o b  c o m p l e t i o n
+R e f u n d  p ro c e s s i n g  h a p p e n s  a s y n c h ro n o u s l y
+R e t u rn  re s p o n s e :
+H T T P  s t a t u s  c o d e  2 0 1
+J S O N  b o d y  c o n t a i n i n g  re f u n d  d e t a i l s  i n c l u d i n g  i d ,  p a y m e n t _ i d ,  a m o u n t ,  r e a s o n ,
+s t a t u s ,  a n d  c re a t e d _ a t
+N e w:  G e t  R e f u n d  E n d p o i n t
+N e w:  L i s t  W e b h o o k  L o g s  E n d p o i n t
+G E T  / a p i / v 1 / r e f u n d s / { r e f u n d _ i d }
+H e a d e r s :
+X - A p i - K e y :  k e y _ t e s t _ a b c 1 2 3
+X - A p i - S e c r e t :  s e c r e t _ t e s t _ x y z 7 8 9
+R e s p o n s e  2 0 0 :
+{
+  " i d " :  " r f n d _ K 9 p L 2 m N 4 o Q 5 r " ,
+  " p a y m e n t _ i d " :  " p a y _ H 8 s K 3 j D 9 s 2 L 1 p Q r " ,
+  " a m o u n t " :  5 0 0 0 0 ,
+  " r e a s o n " :  " C u s t o m e r  r e q u e s t e d  r e f u n d " ,
+  " s t a t u s " :  " p r o c e s s e d " ,
+  " c r e a t e d _ a t " :  " 2 0 2 4 - 0 1 - 1 5 T 1 0 : 3 3 : 0 0 Z " ,
+  " p r o c e s s e d _ a t " :  " 2 0 2 4 - 0 1 - 1 5 T 1 0 : 3 3 : 0 5 Z "
+}
+G E T  / a p i / v 1 / w e b h o o k s ? l i m i t = 1 0 & o f f s e t = 0
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 11/22
+N e w:  R e t r y  W e b h o o k  E n d p o i n t
+I m p l e m e n t a t i o n :  R e s e t  a t t e m p t s  t o  0 ,  s e t  s t a t u s  t o  ' p e n d i n g ' ,  e n q u e u e  D e l i v e r W e b h o o k J o b .
+N e w:  J o b  Qu e u e  S t a t u s  E n d p o i n t  ( R e q u i r e d  f o r  E v a l u a t i o n )
+H e a d e r s :
+X - A p i - K e y :  k e y _ t e s t _ a b c 1 2 3
+X - A p i - S e c r e t :  s e c r e t _ t e s t _ x y z 7 8 9
+R e s p o n s e  2 0 0 :
+{
+  " d a t a " :  [
+    {
+      " i d " :  " 5 5 0 e 8 4 0 0 - e 2 9 b - 4 1 d 4 - a 7 1 6 - 4 4 6 6 5 5 4 4 0 0 0 1 " ,
+      " e v e n t " :  " p a y m e n t . s u c c e s s " ,
+      " s t a t u s " :  " s u c c e s s " ,
+      " a t t e m p t s " :  1 ,
+      " c r e a t e d _ a t " :  " 2 0 2 4 - 0 1 - 1 5 T 1 0 : 3 1 : 1 0 Z " ,
+      " l a s t _ a t t e m p t _ a t " :  " 2 0 2 4 - 0 1 - 1 5 T 1 0 : 3 1 : 1 1 Z " ,
+      " r e s p o n s e _ c o d e " :  2 0 0
+    }
+  ] ,
+  " t o t a l " :  1 ,
+  " l i m i t " :  1 0 ,
+  " o f f s e t " :  0
+}
+P O S T  / a p i / v 1 / w e b h o o k s / { w e b h o o k _ i d } / r e t r y
+H e a d e r s :
+X - A p i - K e y :  k e y _ t e s t _ a b c 1 2 3
+X - A p i - S e c r e t :  s e c r e t _ t e s t _ x y z 7 8 9
+R e s p o n s e  2 0 0 :
+{
+  " i d " :  " 5 5 0 e 8 4 0 0 - e 2 9 b - 4 1 d 4 - a 7 1 6 - 4 4 6 6 5 5 4 4 0 0 0 1 " ,
+  " s t a t u s " :  " p e n d i n g " ,
+  " m e s s a g e " :  " W e b h o o k  r e t r y  s c h e d u l e d "
+}
+G E T  / a p i / v 1 / t e s t / j o b s / s t a t u s
+N o  a u t h e n t i c a t i o n  r e q u i r e d  ( t e s t  e n d p o i n t )
+R e s p o n s e  2 0 0 :
+{
+  " p e n d i n g " :  5 ,
+  " p r o c e s s i n g " :  2 ,
+  " c o m p l e t e d " :  1 0 0 ,
+  " f a i l e d " :  0 ,
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 12/22
+I m p l e m e n t a t i o n  r e q u i r e m e n t s :
+C re a t e  a n  e n d p o i n t  h a n d l e r f o r G E T  / a p i / v 1 / t e s t / j o b s / s t a t u s  t h a t  d o e s  n o t  re q u i re
+a u t h e n t i c a t i o n
+Q u e ry  t h e  j o b  q u e u e  ( R e d i s )  t o  g e t  s t a t i s t i c s :
+p e n d i n g :  C o u n t  o f  j o b s  w a i t i n g  t o  b e  p ro c e s s e d
+p r o c e s s i n g :  C o u n t  o f  j o b s  c u rre n t l y  b e i n g  p ro c e s s e d
+c o m p l e t e d :  C o u n t  o f  s u c c e s s f u l l y  c o m p l e t e d  j o b s  ( o p t i o n a l ,  c a n  b e  a p p r o x i m a t e )
+f a i l e d :  C o u n t  o f  f a i l e d  j o b s  ( o p t i o n a l ,  c a n  b e  a p p r o x i m a t e )
+w o r k e r _ s t a t u s :  S t ri n g  i n d i c a t i n g  i f  w o rk e r i s  ru n n i n g  ( " r u n n i n g "  o r  " s t o p p e d " )
+R e t u rn  H T T P  s t a t u s  c o d e  2 0 0
+N o t e :  T h i s  t e s t  e n d p o i n t  i s  re q u i re d  f o r a u t o m a t e d  e v a l u a t i o n .  I t  p r o v i d e s  v i s i b i l i t y  i n t o  j o b
+q u e u e  s t a t e  w i t h o u t  re q u i ri n g  d i re c t  R e d i s  a c c e s s .
+W e b h o o k  S p e c i fi c a t i o n
+E v e n t s  t o  e m i t :
+p a y m e n t . c r e a t e d  -  W h e n  p a y m e n t  re c o rd  i s  c re a t e d
+p a y m e n t . p e n d i n g  -  W h e n  p a y m e n t  e n t e rs  p e n d i n g  s t a t e
+p a y m e n t . s u c c e s s  -  W h e n  p a y m e n t  s u c c e e d s
+p a y m e n t . f a i l e d  -  W h e n  p a y m e n t  f a i l s
+r e f u n d . c r e a t e d  -  W h e n  re f u n d  i s  i n i t i a t e d
+r e f u n d . p r o c e s s e d  -  W h e n  re f u n d  c o m p l e t e s
+W e b h o o k  P a y l o a d  F o r m a t :
+  " w o r k e r _ s t a t u s " :  " r u n n i n g "
+}
+{
+  " e v e n t " :  " p a y m e n t . s u c c e s s " ,
+  " t i m e s t a m p " :  1 7 0 5 3 1 5 8 7 0 ,
+  " d a t a " :  {
+    " p a y m e n t " :  {
+      " i d " :  " p a y _ H 8 s K 3 j D 9 s 2 L 1 p Q r " ,
+      " o r d e r _ i d " :  " o r d e r _ N X h j 6 7 f G H 2 j k 9 m P q " ,
+      " a m o u n t " :  5 0 0 0 0 ,
+      " c u r r e n c y " :  " I N R " ,
+      " m e t h o d " :  " u p i " ,
+      " v p a " :  " u s e r @ p a y t m " ,
+      " s t a t u s " :  " s u c c e s s " ,
+      " c r e a t e d _ a t " :  " 2 0 2 4 - 0 1 - 1 5 T 1 0 : 3 1 : 0 0 Z "
+    }
+  }
+}
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 13/22
+S i g n a t u r e  G e n e r a t i o n :
+I m p l e m e n t  a  f u n c t i o n  t o  g e n e ra t e  w e b h o o k  s i g n a t u r e s  f o r  s e c u r e  e v e n t  d e l i v e r y
+A l g o ri t h m :  U s e  H M A C - S H A 2 5 6  ( H a s h - b a s e d  M e s s a g e  A u t h e n t i c a t i o n  C o d e  w i t h  S H A - 2 5 6 )
+I n p u t  p a ra m e t e rs :
+p a y l o a d :  T h e  w e b h o o k  p a y l o a d  a s  a  J S O N  s t ri n g  ( m u s t  b e  t h e  e x a c t  s t r i n g  s e n t  i n
+H T T P  b o d y ,  n o  w h i t e s p a c e  c h a n g e s )
+w e b h o o k S e c r e t :  T h e  m e rc h a n t ' s  w e b h o o k _ s e c re t  f ro m  t h e  d a t a b a s e
+P ro c e s s :
+1 .  U s e  t h e  m e rc h a n t ' s  w e b h o o k _ s e c re t  a s  t h e  H M A C  k e y
+2 .  U s e  t h e  J S O N  s t ri n g  re p re s e n t a t i o n  o f  t h e  p a y l o a d  a s  t h e  d a t a  t o  s i g n
+3 .  I m p o rt a n t :  T h e  J S O N  s t ri n g  m u s t  m a t c h  e x a c t l y  w h a t  w i l l  b e  s e n t  i n  t h e  H T T P  r e q u e s t
+b o d y  ( n o  p re t t y - p ri n t i n g ,  n o  w h i t e s p a c e  c h a n g e s )
+4 .  G e n e ra t e  H M A C - S H A 2 5 6  h a s h  o f  t h e  p a y l o a d  u s i n g  t h e  s e c r e t
+5 .  E n c o d e  t h e  h a s h  a s  a  h e x a d e c i m a l  s t r i n g  ( l o w e r c a s e  o r  u p p e r c a s e ,  b o t h
+a c c e p t a b l e )
+R e t u rn :  T h e  h e x - e n c o d e d  s i g n a t u re  s t r i n g
+E x a m p l e :  F o r p a y l o a d  { " e v e n t " : " p a y m e n t . s u c c e s s " , " d a t a " : { . . . } }  a n d  s e c re t
+w h s e c _ t e s t _ a b c 1 2 3 ,  g e n e ra t e  s i g n a t u re  l i k e  a 1 b 2 c 3 d 4 e 5 f 6 . . .  ( 6 4  h e x  c h a ra c t e rs  f o r S H A -
+2 5 6 )
+W e b h o o k  H T T P  R e q u e s t :
+E m b e d d a b l e  S D K
+C re a t e  a  J a v a S c ri p t  S D K  t h a t  m e rc h a n t s  c a n  i n c l u d e  o n  t h e i r  w e b s i t e s :
+F i l e  s t r u c t u r e :
+P O S T  h t t p s : / / m e r c h a n t - w e b s i t e . c o m / w e b h o o k
+H e a d e r s :
+C o n t e n t - T y p e :  a p p l i c a t i o n / j s o n
+X - W e b h o o k - S i g n a t u r e :  < g e n e r a t e d _ s i g n a t u r e >
+B o d y :
+< J S O N  p a y l o a d >
+c h e c k o u t - w i d g e t /
+├ ─ ─  s r c /
+│    ├ ─ ─  s d k /
+│    │    ├ ─ ─  P a y m e n t G a t e w a y . j s
+│    │    ├ ─ ─  m o d a l . j s
+│    │    └ ─ ─  s t y l e s . c s s
+│    └ ─ ─  i f r a m e - c o n t e n t /
+│        └ ─ ─  C h e c k o u t F o r m . j s x
+├ ─ ─  w e b p a c k . c o n f i g . j s
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 14/22
+S D K  A P I :
+U s a g e  b y  m e r c h a n t s :
+└ ─ ─  d i s t /
+    └ ─ ─  c h e c k o u t . j s  ( b u n d l e d  o u t p u t )
+/ /  F i l e :  P a y m e n t G a t e w a y . j s
+c l a s s  P a y m e n t G a t e w a y  {
+  c o n s t r u c t o r ( o p t i o n s )  {
+    / /  o p t i o n s :  {
+    / /    k e y :  ' k e y _ t e s t _ a b c 1 2 3 ' ,
+    / /    o r d e r I d :  ' o r d e r _ x y z ' ,
+    / /    o n S u c c e s s :  f u n c t i o n ( r e s p o n s e )  {  } ,
+    / /    o n F a i l u r e :  f u n c t i o n ( e r r o r )  {  } ,
+    / /    o n C l o s e :  f u n c t i o n ( )  {  }
+    / /  }
+    / /
+    / /  I m p l e m e n t a t i o n :
+    / /  1 .  V a l i d a t e  r e q u i r e d  o p t i o n s
+    / /  2 .  S t o r e  c o n f i g u r a t i o n
+    / /  3 .  P r e p a r e  i f r a m e  m o d a l
+  }
+  
+  o p e n ( )  {
+    / /  1 .  C r e a t e  m o d a l  o v e r l a y
+    / /  2 .  C r e a t e  i f r a m e  w i t h  s r c  p o i n t i n g  t o  c h e c k o u t  p a g e
+    / /  3 .  S e t  i f r a m e  a t t r i b u t e s  w i t h  d a t a - t e s t i d = " p a y m e n t - i f r a m e "
+    / /  4 .  A p p e n d  m o d a l  t o  d o c u m e n t  b o d y
+    / /  5 .  S e t  u p  p o s t M e s s a g e  l i s t e n e r  f o r  i f r a m e  c o m m u n i c a t i o n
+    / /  6 .  S h o w  m o d a l
+  }
+  
+  c l o s e ( )  {
+    / /  1 .  R e m o v e  m o d a l  f r o m  D O M
+    / /  2 .  C a l l  o n C l o s e  c a l l b a c k  i f  p r o v i d e d
+  }
+}
+/ /  E x p o s e  g l o b a l l y
+w i n d o w . P a y m e n t G a t e w a y  =  P a y m e n t G a t e w a y ;
+< s c r i p t  s r c = " h t t p s : / / c d n . y o u r g a t e w a y . c o m / c h e c k o u t . j s " > < / s c r i p t >
+< b u t t o n  i d = " p a y - b u t t o n " > P a y  N o w < / b u t t o n >
+< s c r i p t >
+d o c u m e n t . g e t E l e m e n t B y I d ( ' p a y - b u t t o n ' ) . a d d E v e n t L i s t e n e r ( ' c l i c k ' ,  f u n c t i o n ( )  {
+  c o n s t  c h e c k o u t  =  n e w  P a y m e n t G a t e w a y ( {
+    k e y :  ' k e y _ t e s t _ a b c 1 2 3 ' ,
+    o r d e r I d :  ' o r d e r _ x y z ' ,
+    o n S u c c e s s :  f u n c t i o n ( r e s p o n s e )  {
+      c o n s o l e . l o g ( ' P a y m e n t  s u c c e s s f u l : ' ,  r e s p o n s e . p a y m e n t I d ) ;
+    } ,
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 15/22
+S D K  m o d a l  H T M L  s t r u c t u r e  ( f o r a u t o m a t e d  t e s t i n g ) :
+C r o s s - o r i g i n  c o m m u n i c a t i o n :
+E n h a n c e d  D a s h b o a r d  F e a t u r e s
+N e w :  W e b h o o k  C o n f i g u r a t i o n  P a g e  ( / d a s h b o a r d / w e b h o o k s ) :
+    o n F a i l u r e :  f u n c t i o n ( e r r o r )  {
+      c o n s o l e . l o g ( ' P a y m e n t  f a i l e d : ' ,  e r r o r ) ;
+    }
+  } ) ;
+  
+  c h e c k o u t . o p e n ( ) ;
+} ) ;
+< / s c r i p t >
+< d i v  i d = " p a y m e n t - g a t e w a y - m o d a l "  d a t a - t e s t i d = " p a y m e n t - m o d a l " >
+  < d i v  c l a s s = " m o d a l - o v e r l a y " >
+    < d i v  c l a s s = " m o d a l - c o n t e n t " >
+      < i f r a m e  
+        d a t a - t e s t i d = " p a y m e n t - i f r a m e "
+        s r c = " h t t p : / / l o c a l h o s t : 3 0 0 1 / c h e c k o u t ? o r d e r _ i d = x x x & e m b e d d e d = t r u e "
+      > < / i f r a m e >
+      < b u t t o n  
+        d a t a - t e s t i d = " c l o s e - m o d a l - b u t t o n "  
+        c l a s s = " c l o s e - b u t t o n "
+      >
+        ×
+      < / b u t t o n >
+    < / d i v >
+  < / d i v >
+< / d i v >
+/ /  I n  i f r a m e  ( c h e c k o u t  p a g e )
+f u n c t i o n  s e n d M e s s a g e T o P a r e n t ( t y p e ,  d a t a )  {
+  w i n d o w . p a r e n t . p o s t M e s s a g e ( {
+    t y p e :  t y p e ,   / /  ' p a y m e n t _ s u c c e s s ' ,  ' p a y m e n t _ f a i l e d ' ,  ' c l o s e _ m o d a l '
+    d a t a :  d a t a
+  } ,  ' * ' ) ;
+}
+/ /  I n  S D K  ( p a r e n t  p a g e )
+w i n d o w . a d d E v e n t L i s t e n e r ( ' m e s s a g e ' ,  f u n c t i o n ( e v e n t )  {
+  i f  ( e v e n t . d a t a . t y p e  = = =  ' p a y m e n t _ s u c c e s s ' )  {
+    t h i s . o n S u c c e s s ( e v e n t . d a t a . d a t a ) ;
+    t h i s . c l o s e ( ) ;
+  }  e l s e  i f  ( e v e n t . d a t a . t y p e  = = =  ' p a y m e n t _ f a i l e d ' )  {
+    t h i s . o n F a i l u r e ( e v e n t . d a t a . d a t a ) ;
+  }
+} ) ;
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 16/22
+< d i v  d a t a - t e s t i d = " w e b h o o k - c o n f i g " >
+  < h 2 > W e b h o o k  C o n f i g u r a t i o n < / h 2 >
+  
+  < f o r m  d a t a - t e s t i d = " w e b h o o k - c o n f i g - f o r m " >
+    < d i v >
+      < l a b e l > W e b h o o k  U R L < / l a b e l >
+      < i n p u t  
+        d a t a - t e s t i d = " w e b h o o k - u r l - i n p u t "
+        t y p e = " u r l "
+        p l a c e h o l d e r = " h t t p s : / / y o u r s i t e . c o m / w e b h o o k "
+      / >
+    < / d i v >
+    
+    < d i v >
+      < l a b e l > W e b h o o k  S e c r e t < / l a b e l >
+      < s p a n  d a t a - t e s t i d = " w e b h o o k - s e c r e t " > w h s e c _ t e s t _ a b c 1 2 3 < / s p a n >
+      < b u t t o n  d a t a - t e s t i d = " r e g e n e r a t e - s e c r e t - b u t t o n " >
+        R e g e n e r a t e
+      < / b u t t o n >
+    < / d i v >
+    
+    < b u t t o n  d a t a - t e s t i d = " s a v e - w e b h o o k - b u t t o n "  t y p e = " s u b m i t " >
+      S a v e  C o n f i g u r a t i o n
+    < / b u t t o n >
+    
+    < b u t t o n  d a t a - t e s t i d = " t e s t - w e b h o o k - b u t t o n "  t y p e = " b u t t o n " >
+      S e n d  T e s t  W e b h o o k
+    < / b u t t o n >
+  < / f o r m >
+  
+  < h 3 > W e b h o o k  L o g s < / h 3 >
+  < t a b l e  d a t a - t e s t i d = " w e b h o o k - l o g s - t a b l e " >
+    < t h e a d >
+      < t r >
+        < t h > E v e n t < / t h >
+        < t h > S t a t u s < / t h >
+        < t h > A t t e m p t s < / t h >
+        < t h > L a s t  A t t e m p t < / t h >
+        < t h > R e s p o n s e  C o d e < / t h >
+        < t h > A c t i o n s < / t h >
+      < / t r >
+    < / t h e a d >
+    < t b o d y >
+      < t r  d a t a - t e s t i d = " w e b h o o k - l o g - i t e m "  d a t a - w e b h o o k - i d = " l o g _ 1 2 3 " >
+        < t d  d a t a - t e s t i d = " w e b h o o k - e v e n t " > p a y m e n t . s u c c e s s < / t d >
+        < t d  d a t a - t e s t i d = " w e b h o o k - s t a t u s " > s u c c e s s < / t d >
+        < t d  d a t a - t e s t i d = " w e b h o o k - a t t e m p t s " > 1 < / t d >
+        < t d  d a t a - t e s t i d = " w e b h o o k - l a s t - a t t e m p t " >
+          2 0 2 4 - 0 1 - 1 5  1 0 : 3 1 : 1 1
+        < / t d >
+        < t d  d a t a - t e s t i d = " w e b h o o k - r e s p o n s e - c o d e " > 2 0 0 < / t d >
+        < t d >
+          < b u t t o n  
+            d a t a - t e s t i d = " r e t r y - w e b h o o k - b u t t o n "
+            d a t a - w e b h o o k - i d = " l o g _ 1 2 3 "
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 17/22
+N e w :  A P I  D o c u m e n t a t i o n  P a g e  ( / d a s h b o a r d / d o c s ) :
+          >
+            R e t r y
+          < / b u t t o n >
+        < / t d >
+      < / t r >
+    < / t b o d y >
+  < / t a b l e >
+< / d i v >
+< d i v  d a t a - t e s t i d = " a p i - d o c s " >
+  < h 2 > I n t e g r a t i o n  G u i d e < / h 2 >
+  
+  < s e c t i o n  d a t a - t e s t i d = " s e c t i o n - c r e a t e - o r d e r " >
+    < h 3 > 1 .  C r e a t e  O r d e r < / h 3 >
+    < p r e  d a t a - t e s t i d = " c o d e - s n i p p e t - c r e a t e - o r d e r " >
+< c o d e >
+c u r l  - X  P O S T  h t t p : / / l o c a l h o s t : 8 0 0 0 / a p i / v 1 / o r d e r s  \
+  - H  " X - A p i - K e y :  k e y _ t e s t _ a b c 1 2 3 "  \
+  - H  " X - A p i - S e c r e t :  s e c r e t _ t e s t _ x y z 7 8 9 "  \
+  - H  " C o n t e n t - T y p e :  a p p l i c a t i o n / j s o n "  \
+  - d  ' {
+    " a m o u n t " :  5 0 0 0 0 ,
+    " c u r r e n c y " :  " I N R " ,
+    " r e c e i p t " :  " r e c e i p t _ 1 2 3 "
+  } '
+< / c o d e >
+    < / p r e >
+  < / s e c t i o n >
+  
+  < s e c t i o n  d a t a - t e s t i d = " s e c t i o n - s d k - i n t e g r a t i o n " >
+    < h 3 > 2 .  S D K  I n t e g r a t i o n < / h 3 >
+    < p r e  d a t a - t e s t i d = " c o d e - s n i p p e t - s d k " >
+< c o d e >
+& l t ; s c r i p t  s r c = " h t t p : / / l o c a l h o s t : 3 0 0 1 / c h e c k o u t . j s " & g t ; & l t ; / s c r i p t & g t ;
+& l t ; s c r i p t & g t ;
+c o n s t  c h e c k o u t  =  n e w  P a y m e n t G a t e w a y ( {
+  k e y :  ' k e y _ t e s t _ a b c 1 2 3 ' ,
+  o r d e r I d :  ' o r d e r _ x y z ' ,
+  o n S u c c e s s :  ( r e s p o n s e )  = >  {
+    c o n s o l e . l o g ( ' P a y m e n t  I D : ' ,  r e s p o n s e . p a y m e n t I d ) ;
+  }
+} ) ;
+c h e c k o u t . o p e n ( ) ;
+& l t ; / s c r i p t & g t ;
+< / c o d e >
+    < / p r e >
+  < / s e c t i o n >
+  
+  < s e c t i o n  d a t a - t e s t i d = " s e c t i o n - w e b h o o k - v e r i f i c a t i o n " >
+    < h 3 > 3 .  V e r i f y  W e b h o o k  S i g n a t u r e < / h 3 >
+    < p r e  d a t a - t e s t i d = " c o d e - s n i p p e t - w e b h o o k " >
+< c o d e >
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 18/22
+T e s t i n g  Y o u r  I m p l e m e n t a t i o n
+C re a t e  a  s i m p l e  m e rc h a n t  t e s t  a p p  t o  v e r i f y  w e b h o o k s  w o r k :
+R u n  t h i s  a n d  c o n f i g u re  y o u r w e b h o o k  U R L  t o  h t t p : / / h o s t . d o c k e r . i n t e r n a l : 4 0 0 0 / w e b h o o k  ( o n
+M a c / W i n d o w s )  o r h t t p : / / 1 7 2 . 1 7 . 0 . 1 : 4 0 0 0 / w e b h o o k  ( o n  L i n u x ) .
+c o n s t  c r y p t o  =  r e q u i r e ( ' c r y p t o ' ) ;
+f u n c t i o n  v e r i f y W e b h o o k ( p a y l o a d ,  s i g n a t u r e ,  s e c r e t )  {
+  c o n s t  e x p e c t e d S i g n a t u r e  =  c r y p t o
+    . c r e a t e H m a c ( ' s h a 2 5 6 ' ,  s e c r e t )
+    . u p d a t e ( J S O N . s t r i n g i f y ( p a y l o a d ) )
+    . d i g e s t ( ' h e x ' ) ;
+  
+  r e t u r n  s i g n a t u r e  = = =  e x p e c t e d S i g n a t u r e ;
+}
+< / c o d e >
+    < / p r e >
+  < / s e c t i o n >
+< / d i v >
+/ /  t e s t - m e r c h a n t / w e b h o o k - r e c e i v e r . j s
+c o n s t  e x p r e s s  =  r e q u i r e ( ' e x p r e s s ' ) ;
+c o n s t  c r y p t o  =  r e q u i r e ( ' c r y p t o ' ) ;
+c o n s t  a p p  =  e x p r e s s ( ) ;
+a p p . u s e ( e x p r e s s . j s o n ( ) ) ;
+a p p . p o s t ( ' / w e b h o o k ' ,  ( r e q ,  r e s )  = >  {
+  c o n s t  s i g n a t u r e  =  r e q . h e a d e r s [ ' x - w e b h o o k - s i g n a t u r e ' ] ;
+  c o n s t  p a y l o a d  =  J S O N . s t r i n g i f y ( r e q . b o d y ) ;
+  
+  / /  V e r i f y  s i g n a t u r e
+  c o n s t  e x p e c t e d S i g n a t u r e  =  c r y p t o
+    . c r e a t e H m a c ( ' s h a 2 5 6 ' ,  ' w h s e c _ t e s t _ a b c 1 2 3 ' )
+    . u p d a t e ( p a y l o a d )
+    . d i g e s t ( ' h e x ' ) ;
+  
+  i f  ( s i g n a t u r e  ! = =  e x p e c t e d S i g n a t u r e )  {
+    c o n s o l e . l o g ( ' ❌  I n v a l i d  s i g n a t u r e ' ) ;
+    r e t u r n  r e s . s t a t u s ( 4 0 1 ) . s e n d ( ' I n v a l i d  s i g n a t u r e ' ) ;
+  }
+  
+  c o n s o l e . l o g ( ' ✅  W e b h o o k  v e r i f i e d : ' ,  r e q . b o d y . e v e n t ) ;
+  c o n s o l e . l o g ( ' P a y m e n t  I D : ' ,  r e q . b o d y . d a t a . p a y m e n t . i d ) ;
+  
+  r e s . s t a t u s ( 2 0 0 ) . s e n d ( ' O K ' ) ;
+} ) ;
+a p p . l i s t e n ( 4 0 0 0 ,  ( )  = >  {
+  c o n s o l e . l o g ( ' T e s t  m e r c h a n t  w e b h o o k  r u n n i n g  o n  p o r t  4 0 0 0 ' ) ;
+} ) ;
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 19/22
+C o m m o n  M i s t a k e s
+1 .  J o b  q u e u e  n o t  p r o c e s s i n g :  E n s u re  w o rk e r s e rv i c e  i s  ru n n i n g  a n d  c o n n e c t e d  t o  R e d i s .
+C h e c k  t h a t  j o b s  a re  b e i n g  e n q u e u e d  c o r r e c t l y  a n d  w o r k e r s  a r e  c o n s u m i n g  t h e m .  M a n y
+s t u d e n t s  f o rg e t  t o  s t a rt  t h e  w o rk e r c o n t a i n e r .
+2 .  W e b h o o k  s i g n a t u r e s  d o n ' t  m a t c h :  T h e  s i g n a t u re  m u s t  b e  g e n e ra t e d  f ro m  t h e  e x a c t
+J S O N  s t ri n g  s e n t  i n  t h e  re q u e s t  b o d y .  D o n ' t  p r e t t y - p r i n t  o r  m o d i f y  t h e  J S O N .  U s e  t h e  s a m e
+s t ri n g  f o r b o t h  s i g n a t u re  g e n e ra t i o n  a n d  H T T P  b o d y .
+3 .  I d e m p o t e n c y  k e y s  n o t  w o r k i n g :  K e y s  m u s t  b e  c h e c k e d  b e f o re  a n y  d a t a b a s e  o p e r a t i o n s .
+S t o re  t h e  c o m p l e t e  re s p o n s e  ( n o t  j u s t  p a y m e n t  I D )  a n d  r e t u r n  i t  i d e n t i c a l l y  o n
+s u b s e q u e n t  re q u e s t s  w i t h  t h e  s a m e  k e y .
+4 .  E x p o n e n t i a l  b a c k o f f  i n c o r r e c t :  R e t ry  d e l a y s  m u s t  f o l l o w  t h i s  e x a c t  s c h e d u l e :
+A t t e m p t  1 :  I m m e d i a t e  ( 0  d e l a y )
+A t t e m p t  2 :  A f t e r 1  m i n u t e  ( 6 0  s e c o n d s )
+A t t e m p t  3 :  A f t e r 5  m i n u t e s  ( 3 0 0  s e c o n d s )
+A t t e m p t  4 :  A f t e r 3 0  m i n u t e s  ( 1 8 0 0  s e c o n d s )
+A t t e m p t  5 :  A f t e r 2  h o u rs  ( 7 2 0 0  s e c o n d s )
+S t o re  t h e  n e x t _ r e t r y _ a t  t i m e s t a m p  i n  t h e  d a t a b a s e  b a s e d  o n  t h e s e  d e l a y s .
+5 .  S D K  n o t  l o a d i n g  i n  p a r e n t  p a g e :  E n s u re  y o u r w e b p a c k  c o n f i g  o u t p u t s  a  U M D  b u n d l e  t h a t
+e x p o s e s  P a y m e n t G a t e w a y  g l o b a l l y .  C h e c k  t h e  b u n d l e  w o rk s  b y  l o a d i n g  i t  i n  a  p l a i n  H T M L  f i l e .
+6 .  P o s t M e s s a g e  o r i g i n  r e s t r i c t i o n s :  W h i l e  ' * '  o ri g i n  i s  a c c e p t a b l e  f o r t h i s  p ro j e c t ,  i n
+p ro d u c t i o n  y o u  s h o u l d  v a l i d a t e  e v e n t . o r i g i n .  D o c u m e n t  t h i s  s e c u ri t y  c o n s i d e ra t i o n  i n
+y o u r R E A D M E .
+7 .  R e f u n d  a m o u n t  v a l i d a t i o n :  M u s t  c h e c k  t o t a l  re f u n d e d  a m o u n t  a c r o s s  a l l  r e f u n d s  f o r  a
+p a y m e n t ,  n o t  j u s t  i n d i v i d u a l  re f u n d  a m o u n t s .  A  p a y m e n t  o f  ₹ 5 0 0  s h o u l d  n o t  a l l o w  t w o
+₹ 4 0 0  re f u n d s .
+8 .  W e b h o o k  r e t r y  s c h e d u l i n g :  U s e  d a t a b a s e  n e x t _ r e t r y _ a t  f i e l d  t o  s c h e d u l e  re t ri e s ,  d o n ' t
+u s e  i n - m e m o ry  t i m e rs .  W o rk e rs  m a y  r e s t a r t  a n d  l o s e  s c h e d u l e d  r e t r i e s .
+9 .  P a y m e n t  s t a t u s  f r o m  D e l i v e r a b l e  1 :  I n  D e l i v e ra b l e  1 ,  p a y m e n t s  a re  c re a t e d  w i t h  s t a t u s
+' p r o c e s s i n g '  a n d  p ro c e s s e d  s y n c h ro n o u s l y .  F o r D e l i v e r a b l e  2 ,  u p d a t e  y o u r  p a y m e n t
+c re a t i o n  f l o w  t o  re t u rn  s t a t u s  ' p e n d i n g '  i n s t e a d  o f  ' p r o c e s s i n g ' ,  s i n c e  p ro c e s s i n g  n o w
+h a p p e n s  a s y n c h ro n o u s l y  v i a  j o b  w o r k e r s .  T h e  s t a t u s  f l o w  i n  D e l i v e r a b l e  2  i s :  p e n d i n g  → 
+( w o rk e r p ro c e s s e s )  →  s u c c e s s / f a i l e d .
+1 0 .  M i s s i n g  c a p t u r e d  f i e l d :  A d d  c a p t u r e d  B O O L E A N  D E F A U L T  f a l s e  t o  p a y m e n t s  t a b l e .  T h i s  f i e l d
+t ra c k s  w h e t h e r a  s u c c e s s f u l  p a y m e n t  h a s  b e e n  c a p t u r e d  f o r  s e t t l e m e n t .
+F A Q s
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 20/22
+Q :  S h o u l d  w e b h o o k s  b e  d e l i v e r e d  e v e n  i f  m er c h a n t ' s  w e b h o o k  U R L  i s  n o t  s et ?
+A :  N o .  O n l y  c re a t e  w e b h o o k  l o g s  a n d  a t t e m p t  d e l i v e r y  i f  w e b h o o k _ u r l  i s  c o n f i g u re d  f o r t h e
+m e rc h a n t .  I f  N U L L ,  s k i p  w e b h o o k  d e l i v e r y  b u t  s t i l l  p r o c e s s  t h e  p a y m e n t  n o r m a l l y .
+Q :  H o w  d o  I  t e s t  w e b h o o k  r e t r i e s  w i t h o u t  w a i t i n g  h o u r s ?
+A :  F o r d e v e l o p m e n t ,  y o u  c a n  u s e  s h o rt e r  r e t r y  i n t e r v a l s  ( e . g . ,  1 0 s ,  3 0 s ,  1 m ,  2 m ,  5 m ) .  J u s t  e n s u r e
+t h e  p ro d u c t i o n  c o n f i g u ra t i o n  u s e s  t h e  s p e c i f i e d  i n t e r v a l s :  1 m i n ,  5 m i n ,  3 0 m i n ,  2 h r .
+Q :  C a n  I  u s e  a  d i f f e r e n t  j o b  q u e u e  i n s t ea d  o f  B u l l / C e l er y ?
+A :  Y e s ,  a s  l o n g  a s  i t ' s  R e d i s - b a s e d .  O p t i o n s  i n c l u d e  Bu l l M Q  ( N o d e . j s ) ,  R Q  ( P y t h o n ) ,  S i d e k i q
+( R u b y ) ,  o r A s y n q  ( G o ) .  T h e  k e y  re q u i re m e n t  i s  r e l i a b l e  b a c k g r o u n d  j o b  p r o c e s s i n g  w i t h  r e t r y
+s u p p o rt .
+Q :  H o w  s h o u l d  t h e  S D K  b e  s e r v e d  t o  m er c h a n t s ?
+A :  B u i l d  t h e  S D K  i n t o  a  s i n g l e  c h e c k o u t . j s  f i l e  u s i n g  w e b p a c k / ro l l u p .  S e rv e  i t  a s  a  s t a t i c  f i l e  f r o m
+y o u r c h e c k o u t  s e rv i c e  o n  p o rt  3 0 0 1 .  M e r c h a n t s  c a n  i n c l u d e  i t  v i a :  < s c r i p t
+s r c = " h t t p : / / l o c a l h o s t : 3 0 0 1 / c h e c k o u t . j s " > < / s c r i p t >
+Q :  W h a t  i f  a  w e b h o o k  f a i l s  a f t e r  5  a t t em p t s ?
+A :  M a rk  t h e  w e b h o o k  l o g  s t a t u s  a s  f a i l e d  p e rm a n e n t l y  a n d  s t o p  re t ry i n g .  M e rc h a n t s  c a n
+m a n u a l l y  re t ry  f ro m  t h e  d a s h b o a rd  i f  n e e d e d  u s i n g  t h e  r e t r y  b u t t o n ,  w h i c h  r e s e t s  a t t e m p t s  t o
+0 .
+Q :  S h o u l d  r e f u n d s  b e  i n s t a n t  o r  t a k e  t i m e?
+A :  S i m u l a t e  a  3 - 5  s e c o n d  p ro c e s s i n g  d e l a y  i n  t h e  R e f u n d W o r k e r ,  t h e n  u p d a t e  s t a t u s  t o
+p r o c e s s e d .  T h i s  m i m i c s  re a l - w o rl d  re f u n d  p ro c e s s i n g  t i m e .
+Q :  H o w  d o  I  h a n d l e  p a r t i a l  r e f u n d s  c o r r ec t l y ?
+A :  T ra c k  a l l  re f u n d s  f o r a  p a y m e n t .  B e f o r e  c r e a t i n g  a  n e w  r e f u n d ,  s u m  a l l  e x i s t i n g  r e f u n d s  f o r
+t h a t  p a y m e n t  a n d  e n s u re  r e q u e s t e d _ a m o u n t  +  s u m ( e x i s t i n g _ r e f u n d s )  < =  p a y m e n t . a m o u n t .  S t o re  e a c h
+re f u n d  a s  a  s e p a ra t e  re c o rd .
+Q :  W h a t  s h o u l d  t h e  i d e m p o t e n c y  k e y  ex p i r y  t i m e  b e ?
+A :  2 4  h o u rs  f ro m  c re a t i o n .  A f t e r e x p i ry ,  t h e  s a m e  k e y  c a n  b e  r e u s e d .  S t o r e  e x p i r y  a s  c r e a t e d _ a t
++  2 4  h o u r s  a n d  c h e c k  i f  c u r r e n t _ t i m e  <  e x p i r e s _ a t  b e f o re  re t u rn i n g  c a c h e d  re s p o n s e .
+Q :  H o w  d o  I  t e s t  t h e  S D K  l o c a l l y  w i t h o u t  H T T P S ?
+A :  F o r l o c a l  d e v e l o p m e n t ,  H T T P  i s  f i n e .  T h e  S D K  s h o u l d  w o r k  o n  h t t p : / / l o c a l h o s t : 3 0 0 1 .  F o r
+p ro d u c t i o n ,  y o u ' d  n e e d  H T T P S ,  b u t  t h a t ' s  n o t  r e q u i r e d  f o r  t h i s  p r o j e c t .
+Q :  S h o u l d  t h e  S D K  w o r k  o n  m o b i l e  b r o w s e r s ?
+A :  Y e s ,  t h e  m o d a l / i f ra m e  s h o u l d  b e  re s p o n s i v e  a n d  w o r k  o n  m o b i l e  v i e w p o r t s .  T e s t  o n  C h r o m e
+D e v T o o l s  m o b i l e  e m u l a t i o n  t o  e n s u re  i t ' s  u s a b l e  o n  s m a l l e r  s c r e e n s .
+Q :  W h a t  i f  m e r c h a n t ' s  w e b h o o k  e n d p o i n t  r e t u r n s  5 0 0  e r r o r ?
+A :  T re a t  i t  a s  a  f a i l e d  d e l i v e ry  a t t e m p t .  L o g  t h e  r e s p o n s e  c o d e  ( 5 0 0 ) ,  i n c r e m e n t  a t t e m p t s ,  a n d
+s c h e d u l e  a  re t ry  i f  a t t e m p t s  <  5 .  M e rc h a n t s  c a n  s e e  t h e  e r r o r  i n  w e b h o o k  l o g s .
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 21/22
+About Us
+Contact Us
+Privacy Policy
+Terms and Conditions
+All rights reserved. Copyright, Partnr 2025-26
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 22/22
+
+========== END OF desc.pdf ==========
+========== START OF inst.pdf ==========
+B u i l d  P r o d u c t i o n - R e a d y  P a y m e n t  G a t e w a y  w i t h
+A s y n c  P r o c e s s i n g  a n d  W e b h o o k s
+M a n d a t o r y  T a s k
+B a c k
+D o m a i n
+B a c k e n d  D e v e l o p m e n t
+S k i l l s
+A P I  D e v e l o p m e n t
+ C o m m u n i c a t i o n
+ D a t a b a s e  M a n a g e m e n t
+D e e p  L e a r n i n g
+ D o c k e r  C o m p o s e  C o n f i g u r a t i o n
+ E D A
+E x p o n e n t i a l  B a c k o f f  I m p l e m e n t a t i o n
+H M A C  S i g n a t u r e  G e n e r a t i o n
+ M a n a g e m e n t
+ P r o d u c t
+P u b l i c  R e l a t i o n s
+ S D K  D e v e l o p m e n t
+ S o l u t i o n  A r c h i t e c t u r e
+S y s t e m  R e l i a b i l i t y
+ W e b h o o k  I m p l e m e n t a t i o n
+D i f f i c u l t y
+A d v a n c e d
+T o o l s
+B u l l
+ C e l e r y
+ D o c k e r
+ E x p r e s s . J s
+ F a s t A P I
+ G o
+J a v a
+ N o d e . J s
+ P o s t g r e S QL
+ P y t h o n
+ R e a c t
+ R e d i s
+R Q
+ S p r i n g  B o o t
+ W e b p a c k
+I n d u s t ri e s
+F i n t e c h
+S u b mi s s i o n  R e c e i v e d
+Y o u r s u b m i s s i o n  h a s  b e e n  re c e i v e d  a n d  i s  p e n d i n g  r e v i e w .  Y o u  c a n  s t i l l  u p d a t e  y o u r
+s u b m i s s i o n  t i l l  t h e  e f f e c t i v e  d e a d l i n e .
+S u b m i t t e d  o n  1 4  J a n  2 0 2 6 ,  0 9 : 4 0  p m
+D e a d l i n e :  2 1  J a n  2 0 2 6 ,  0 4 : 5 9  p m
+O v e r v i e w I n s t r u c t i o n s R e s o u r c e s S u b m i t
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 1/4
+S u b mi s s i o n  I n s t r u c t i o n s
+S u b m i t  a  f u l l y  f u n c t i o n a l  p a y m e n t  g a t e w a y  a p p l i c a t i o n  w i t h  a s y n c  p r o c e s s i n g  c a p a b i l i t i e s :
+R e q u i r e d  A r t i f a c t s :
+1 .  W o r k i n g  A p p l i c a t i o n :  C o m p l e t e  s o u rc e  c o d e  w i t h  a l l  s e rv i c e s  ( A P I ,  w o r k e r  s e r v i c e ,
+f ro n t e n d  d a s h b o a rd ,  c h e c k o u t  p a g e ,  e m b e d d a b l e  S D K )  t h a t  c a n  b e  s t a r t e d  w i t h  d o c k e r -
+c o m p o s e  u p  - d
+2 .  R e p o s i t o r y  U R L :  G i t H u b / G i t L a b  re p o s i t o ry  w i t h  a l l  c o d e
+3 .  R E A D M E . m d :  C o m p re h e n s i v e  d o c u m e n t a t i o n  i n c l u d i n g :
+S e t u p  i n s t ru c t i o n s
+A P I  e n d p o i n t  d o c u m e n t a t i o n
+E n v i ro n m e n t  v a ri a b l e  c o n f i g u ra t i o n
+T e s t i n g  i n s t ru c t i o n s
+W e b h o o k  i n t e g ra t i o n  g u i d e
+S D K  i n t e g ra t i o n  g u i d e
+4 .  s u b m i s s i o n . y m l  ( M A N D A T O R Y ) :  C o n f i g u ra t i o n  f i l e  f o r a u t o m a t e d  e v a l u a t i o n  c o n t a i n i n g :
+S e t u p  c o m m a n d s  ( i n s t a l l  d e p e n d e n c i e s ,  c o n f i g u r e  e n v i r o n m e n t )
+S t a rt  c o m m a n d s  ( l a u n c h  a p p l i c a t i o n  v i a  d o c k e r - c o m p o s e  i n c l u d i n g  R e d i s  a n d
+w o rk e r s e rv i c e )
+T e s t  c o m m a n d s  ( ru n  t e s t  s u i t e  i f  a v a i l a b l e )
+V e ri f y  c o m m a n d s  ( A P I  c o n t ra c t  v a l i d a t i o n ,  h e a l t h  c h e c k s ,  j o b  q u e u e  s t a t u s )
+S h u t d o w n  c o m m a n d s  ( g ra c e f u l l y  s t o p  s e r v i c e s )
+O p t i o n a l  A r t i f a c t s  ( B o n u s  P o i n t s ) :
+A rc h i t e c t u re  d i a g ra m  s h o w i n g  a s y n c  p r o c e s s i n g  f l o w ,  j o b  q u e u e  a r c h i t e c t u r e ,  a n d
+w e b h o o k  d e l i v e ry  s y s t e m
+A P I  d o c u m e n t a t i o n  ( O p e n A P I / S w a g g e r  s p e c )
+V i d e o  d e m o  s h o w i n g  e n d - t o - e n d  p a y m e n t  f l o w  w i t h  w e b h o o k  d e l i v e r y  a n d  S D K
+i n t e g ra t i o n
+S c re e n s h o t s  o f  d a s h b o a rd  w e b h o o k  c o n f i g u r a t i o n  a n d  l o g s
+E v a l u a t i o n  P r o c e s s :  Y o u r s u b m i s s i o n  w i l l  b e  e v a l u a t e d  t h r o u g h  a u t o m a t e d  t e s t s  t h a t  v e r i f y :
+A l l  A P I  e n d p o i n t s  w o rk  c o rre c t l y  w i t h  e x a c t  r e q u e s t / r e s p o n s e  f o r m a t s
+D a t a b a s e  s c h e m a  m a t c h e s  s p e c i f i c a t i o n s  ( r e f u n d s ,  w e b h o o k _ l o g s ,  i d e m p o t e n c y _ k e y s
+t a b l e s )
+F ro n t e n d  p a g e s  i n c l u d e  re q u i re d  d a t a - t e s t - i d  a t t r i b u t e s
+D o c k e r s e rv i c e s  s t a rt  s u c c e s s f u l l y  ( i n c l u d i n g  R e d i s  a n d  w o r k e r  s e r v i c e )
+A s y n c  p a y m e n t  p ro c e s s i n g  v i a  j o b  q u e u e s
+W e b h o o k  d e l i v e ry  w i t h  H M A C  s i g n a t u r e  v e r i f i c a t i o n
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 2/4
+I d e m p o t e n c y  k e y  h a n d l i n g
+R e f u n d  p ro c e s s i n g  l o g i c
+E m b e d d a b l e  S D K  f u n c t i o n a l i t y
+J o b  q u e u e  s t a t u s  e n d p o i n t
+E n s u re  y o u r a p p l i c a t i o n  s t a rt s  s u c c e s s f u l l y  w i t h  d o c k e r - c o m p o s e  u p  - d  a n d  a l l  s e rv i c e s  a re
+a c c e s s i b l e  o n  t h e  s p e c i f i e d  p o rt s  ( 8 0 0 0  f o r  A P I ,  3 0 0 0  f o r  d a s h b o a r d ,  3 0 0 1  f o r  c h e c k o u t ,  6 3 7 9  f o r
+R e d i s ) .
+E v a l u a t i o n  O v e r v i e w
+Y o u r p a y m e n t  g a t e w a y  i m p l e m e n t a t i o n  w i t h  a s y n c  p r o c e s s i n g  w i l l  b e  e v a l u a t e d  t h r o u g h
+m u l t i p l e  m e t h o d s  t o  a s s e s s  f u n c t i o n a l i t y ,  c o d e  q u a l i t y ,  a n d  s y s t e m  d e s i g n :
+A u t o m a t e d  T e s t i n g :  W e  w i l l  ru n  a u t o m a t e d  t e s t s  t h a t  v e rif y  a l l  A P I  e n d p o i n t s  w o r k  c o r r e c t l y
+w i t h  e x a c t  re q u e s t / re s p o n s e  f o rm a t s  s p e c i f i e d  i n  t h e  r e q u i r e m e n t s .  T e s t s  w i l l  c h e c k  d a t a b a s e
+s c h e m a  c o m p l i a n c e  ( re f u n d s ,  w e b h o o k _ l o g s ,  i d e m p o t e n c y _ k e y s  t a b l e s ) ,  a s y n c  p a y m e n t
+p ro c e s s i n g  v i a  j o b  q u e u e s ,  w e b h o o k  d e l i v e r y  w i t h  H M A C  s i g n a t u r e  v e r i f i c a t i o n ,  i d e m p o t e n c y
+k e y  h a n d l i n g ,  re f u n d  p ro c e s s i n g  l o g i c ,  e m b e d d a b l e  S D K  f u n c t i o n a l i t y ,  a n d  j o b  q u e u e  s t a t u s
+e n d p o i n t .  Y o u r a p p l i c a t i o n  m u s t  s t a rt  s u c c e s s f u l l y  w i t h  d o c k e r - c o m p o s e  u p  - d  i n c l u d i n g  R e d i s
+a n d  w o rk e r s e rv i c e s ,  a n d  p a s s  a l l  a u t o m a t e d  e n d p o i n t  t e s t s .
+C o d e  R e v i e w :  Y o u r c o d e  w i l l  b e  re v i e w e d  f o r a rc h i t e c t u r e  q u a l i t y ,  a s y n c  p r o c e s s i n g  p a t t e r n s ,
+j o b  q u e u e  i m p l e m e n t a t i o n ,  w e b h o o k  d e l i v e r y  s y s t e m ,  s e c u r i t y  b e s t  p r a c t i c e s  ( H M A C
+s i g n a t u re s ) ,  e rro r h a n d l i n g ,  a n d  c o d e  o r g a n i z a t i o n .  W e  w i l l  a s s e s s  h o w  y o u  s t r u c t u r e  w o r k e r
+s e rv i c e s ,  i m p l e m e n t  re t ry  l o g i c ,  h a n d l e  i d e m p o t e n c y ,  m a n a g e  r e f u n d  p r o c e s s i n g ,  a n d  b u i l d
+t h e  e m b e d d a b l e  S D K .  C o d e  s h o u l d  d e m o n s t r a t e  c l e a n  a r c h i t e c t u r e ,  p r o p e r  a s y n c  p a t t e r n s ,
+a n d  a d h e re n c e  t o  s e c u ri t y  p ri n c i p l e s .
+S y s t e m  D e s i g n  A s s e s s m e n t :  Y o u r s u b m i s s i o n  q u e s t i o n n a i re  re s p o n s e s  w i l l  b e  e v a l u a t e d  t o
+u n d e rs t a n d  y o u r a rc h i t e c t u ra l  d e c i s i o n s ,  t r a d e - o f f s  c o n s i d e r e d ,  s c a l i n g  s t r a t e g i e s ,  a n d
+e n g i n e e ri n g  j u d g m e n t .  W e  w i l l  a s s e s s  y o u r  u n d e r s t a n d i n g  o f  a s y n c  p r o c e s s i n g  p a t t e r n s ,
+w e b h o o k  d e l i v e ry  m e c h a n i s m s ,  i d e m p o t e n c y  i m p l e m e n t a t i o n ,  a n d  s y s t e m  r e l i a b i l i t y
+c o n s i d e ra t i o n s .
+H u m a n  E v a l u a t i o n :  V i s u a l  a rt i f a c t s  i n c l u d i n g  a rc h i t e c t u re  d i a g r a m s ,  d a s h b o a r d  s c r e e n s h o t s ,
+a n d  v i d e o  d e m o s  w i l l  b e  re v i e w e d  f o r  c l a r i t y ,  c o m p l e t e n e s s ,  a n d  p r e s e n t a t i o n  q u a l i t y .
+D o c u m e n t a t i o n  w i l l  b e  a s s e s s e d  f o r c o m p r e h e n s i v e n e s s  a n d  u s a b i l i t y .
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 3/4
+About Us
+Contact Us
+Privacy Policy
+Terms and Conditions
+All rights reserved. Copyright, Partnr 2025-26
+1/30/26, 12:52 PM Partnr Network - Talent Layer for Borderless Societies
+https://app.partnr.network/global-placement-program/tasks/63486cd261884affa439 4/4
+
+========== END OF inst.pdf ==========

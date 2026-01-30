@@ -1,0 +1,22 @@
+version: 1.0
+setup:
+  - npm install -g pnpm
+  - cd backend && npm install
+  - cd frontend && npm install
+  - cd checkout && npm install
+  - docker-compose build
+run:
+  - docker-compose up -d
+  - sleep 10
+  - docker-compose exec -T api npm run migrate
+  - docker-compose exec -T api npm run seed
+test:
+  - npm install axios
+  - node test_e2e.js
+verify:
+  - curl http://localhost:8000/health
+  - curl http://localhost:3000/
+  - curl http://localhost:3001/checkout
+  - curl http://localhost:8000/api/v1/test/jobs/status
+shutdown:
+  - docker-compose down

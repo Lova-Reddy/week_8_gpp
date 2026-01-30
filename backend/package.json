@@ -1,0 +1,30 @@
+{
+    "name": "payment-gateway-backend",
+    "version": "1.0.0",
+    "description": "Backend for Payment Gateway",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "nodemon src/index.js",
+        "worker": "node src/worker.js",
+        "dev:worker": "nodemon src/worker.js",
+        "migrate": "npx prisma migrate deploy",
+        "studio": "npx prisma studio"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "pg": "^8.11.3",
+        "prisma": "^5.7.0",
+        "@prisma/client": "^5.7.0",
+        "bullmq": "^4.14.0",
+        "ioredis": "^5.3.2",
+        "crypto": "^1.0.1",
+        "uuid": "^9.0.1",
+        "nodemon": "^3.0.2"
+    },
+    "prisma": {
+        "seed": "node prisma/seed.js"
+    }
+}
